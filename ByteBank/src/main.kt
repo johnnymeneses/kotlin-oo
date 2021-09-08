@@ -4,6 +4,19 @@ fun main()
     println("Bem vindo ao Byte Bank ")
     println("")
 
+
+
+
+
+    //2800
+//    println(funcD.autentica(funcD.senha))
+
+
+
+}
+
+fun testaFuncionario()
+{
     val funcJ = Funcionario("Johnny","123456",1000.0)
     println("Funcionario ${funcJ.bonificacao}")
 
@@ -26,13 +39,8 @@ fun main()
 
     println("Total de Bonificações ${calc.total}")
 
-    //2800
-//    println(funcD.autentica(funcD.senha))
-
-
 
 }
-
 
 
 
