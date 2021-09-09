@@ -11,10 +11,15 @@ class Gerente : Funcionario {
 
     override val bonificacao: Double
         get() {
-            return salario * 0.1 + salario
+            return (salario * 0.1) + salario
         }
 
+    fun autentica(senha: Int): Boolean{
+        val senhaCorreta=1234
 
+        return senha == senhaCorreta
+
+    }
 
 //    fun autentica(senha: Int){    }
 

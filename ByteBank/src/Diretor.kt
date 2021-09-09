@@ -2,7 +2,7 @@ class Diretor (gnome: String, gcpf: String, gsalario: Double, val senha: Int, va
 
     override val bonificacao: Double
         get() {
-            return super.bonificacao + salario + plr
+            return (salario *0.3 ) + plr
         }
 
 

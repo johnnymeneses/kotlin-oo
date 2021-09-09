@@ -2,7 +2,7 @@ class Analista (gnome: String, gcpf: String, gsalario: Double): Funcionario(nome
 
     override val bonificacao: Double
         get() {
-            return super.bonificacao
+            return salario * 0.1
         }
 
 

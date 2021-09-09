@@ -11,8 +11,8 @@ class oldCode
 
     fun testaFuncionario()
     {
-        val funcJ = Funcionario("Johnny","123456",1000.0)
-        println("Funcionario ${funcJ.bonificacao}")
+//        val funcJ = Funcionario("Johnny","123456",1000.0)
+//        println("Funcionario ${funcJ.bonificacao}")
 
         val funcG = Gerente("Gerente","655454",1000.0,4567)
         println("Gerente ${funcG.bonificacao}")
@@ -23,17 +23,45 @@ class oldCode
         val funcA = Analista("Analista","65465465",1000.0)
         println("Analista ${funcA.bonificacao}")
 
+        val funcAx = Auxiliar("Auxiliar","65465465",1000.0)
+        println("Auxiliar ${funcA.bonificacao}")
+
+
 
         val calc = CalculadoraBonificacao()
 
-        calc.registra(funcJ)
         calc.registra(funcG)
         calc.registra(funcD)
         calc.registra(funcA)
+        calc.registra(funcAx)
 
         println("Total de Bonificações ${calc.total}")
 
+    }
 
+
+    fun testaContaDiferente()
+    {
+//        val cp= contaPoupanca("Johnnyy", 1234,5678)
+//        val cc = contaCorrente("Eder", 5678, 1234)
+//
+////        cp.depositaRecurso(50.0)
+////        cc.depositaRecurso(50.0)
+//
+//        println("Saldo Conta Poupança ${cp.saldo}")
+//        println("Saldo Conta Corrente ${cc.saldo}")
+//
+//
+//        cp.sacarRecurso(10.0)
+//        cc.sacarRecurso(10.0)
+//
+//        println("Novo Saldo Conta Poupança ${cp.saldo}")
+//        println("NOvo Saldo Conta Corrente ${cc.saldo}")
+//
+//        cp.transfereRecurso(50.0,cc)
+//
+//        println("Novo Saldo Conta Poupança ${cp.saldo}")
+//        println("NOvo Saldo Conta Corrente ${cc.saldo}")
     }
 
     //Exibir se um numero é par ou impar

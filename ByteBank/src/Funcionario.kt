@@ -1,4 +1,4 @@
-open class Funcionario(
+abstract class Funcionario(
     val nome: String,
     val cpf: String,
     val salario: Double) {
@@ -8,16 +8,9 @@ open class Funcionario(
 //            return salario * 0.1
 //        }
 
-    open val bonificacao: Double get() =  salario * 0.1
+    abstract val bonificacao: Double
 
 
-
-    fun autentica(senha: Int): Boolean{
-        val senhaCorreta=1234
-
-        return senha == senhaCorreta
-
-    }
 
 }
 

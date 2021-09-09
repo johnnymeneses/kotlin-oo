@@ -1,38 +1,33 @@
-open class Conta (val titular: String,val agencia: Int, val numeroConta: Int ) {
+abstract class Conta (val titular: String,val agencia: Int, val numeroConta: Int ) {
 
     var saldo: Double = 100.0
-    private set
-
-    fun testaComportamentoConta() {
-        val clJ = Conta("Johnny", 123456, 321 )
-        val clM = Conta("Maria", 65878, 321)
-    }
+    protected set
 
 
-    fun depositaRecurso(valor: Double){
-        this.saldo+=valor
-    }
+//    abstract fun depositaRecurso(valor: Double)
+//    fun depositaRecurso(valor: Double){
+//        this.saldo+=valor
+//    }
 
-    open fun sacarRecurso(valor: Double): Boolean{
-        if(valor>saldo) {
-            return false
-        }else {
-            this.saldo -= valor
-            return true
-        }
-    }
+    abstract fun sacarRecurso(valor: Double)
+//    if(valor>saldo) {
+//        return false
+//    }else {
+//        this.saldo -= valor
+//        return true
 
-    fun transfereRecurso(valor: Double, contaDestino: Conta) {
-        if(sacarRecurso(valor))
-        {
-            contaDestino.depositaRecurso(valor)
-        }else
-        {
-            return
-        }
-
-
-    }
+//    abstract fun transfereRecurso(valor: Double, contaDestino: Conta)
+//    fun transfereRecurso(valor: Double, contaDestino: Conta) {
+//        if(sacarRecurso(valor))
+//        {
+//            contaDestino.depositaRecurso(valor)
+//        }else
+//        {
+//            return
+//        }
+//
+//
+//    }
 
 
 
