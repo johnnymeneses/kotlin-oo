@@ -1,31 +1,12 @@
 
 fun main()
 {
-    val resultado = Divisao()
-    println("10 / 2 = ${resultado.dividir(10,2)}")
+    val ex01 = Ex01()
+    println("Area do Terreno 5 x 10: ${ex01.areaTerreno(10,5)}")
 }
 
 
-class Empresa (
-    val nome: String,
-    val cnpj: String,
-    val endereco: String,
-    val faturamento: Double)
-{
-    fun imprimir(){
-        println("Nome: $nome")
-        println("CNPJ: $cnpj")
-        println("Endereço: $endereco")
-        println("Faturamento: $faturamento")
-    }
 
-    //    val banco = Empresa("Banco XYZ","1234534","Endereco da Empresa",5000.0)
-//    val otica = Empresa("Otica","6565656","Rua da Empresa",4500.0)
-//
-//    banco.imprimir()
-//    otica.imprimir()
-
-}
 
 
 class Divisao{
@@ -48,6 +29,8 @@ class Divisao{
         }
     }
 
+    //    val resultado = Divisao()
+//    println("10 / 2 = ${resultado.dividir(10,2)}")
 
 }
 

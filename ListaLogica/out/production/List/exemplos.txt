@@ -1,0 +1,220 @@
+
+
+fun declaracaoVariaveis()
+{
+//    Variável com valor imutável
+    val nome = "Johnny"
+
+//    Variável com valor que pode ser modificado
+    var nome2 = "Johnny"
+    var nome3: String
+}
+
+
+
+
+
+
+//Para aprofundar
+
+//Documentação sobre modificadores de acesso
+//https://kotlinlang.org/docs/visibility-modifiers.html#classes-and-interfaces
+
+//Construtores
+//https://kotlinlang.org/docs/classes.html#constructors
+
+
+//Convenção de códigos Kotlin
+//https://kotlinlang.org/docs/coding-conventions.html#naming-rules
+//wwww
+
+//Variavel com valor imutável
+val nome = "Johnny"
+//nome = "Eder"
+//Variavel com valor que pode ser modificado
+var noome = "Johnny"
+noome = "Eder"
+
+>>Como declarar uma classe
+
+Sem parâmetro no construtor
+class referencia {}
+
+Sem parâmetro no construtor
+class referencia (nome: String){}
+
+
+>>Como declarar uma função
+
+Com retorno
+Opção 1
+fun soma(a: Int, b: Int): Int {
+    return a+b
+    println(soma(5,6))
+}
+
+Opção 2
+fun soma(a: Int, b: Int): Int = a+b
+Sem retorno
+
+fun max (a: Int, b:Int){
+    var soma = a+b
+}
+
+>> IF / ELSE / WHEN
+if (saldo > 0.0) {
+    println("Saldo positivo")
+} else if (saldo == 0.0) {
+    println("Conta zerada")
+
+    when {
+        saldo > 0.0 -> println("Saldo positivo")
+        saldo == 0.0 -> println("Conta zerada")
+        else -> println("Conta negativa")
+    }
+
+
+    >>Como declarar uma propriedade
+
+    >>GET e SET
+
+    >>Herança
+
+    ..............: Android
+
+    >> Como abrir uma conexão
+    >> Como setar o conteudo em um TextField
+    >> Como receber o conteudo de um Textfield
+    >> Como adicionar permissão para conexão com Internet
+
+
+
+
+
+//Como fazer cast
+//noome = 8.toString()
+
+
+//Controle de FLuxo
+
+    fun ControleFuxo() {
+        var saldo = 0.0
+
+
+        when {
+            saldo > 0.0 -> {
+                println("Saldo positivo")
+            }
+            saldo == 0.0 -> {
+                println("Conta zerada")
+
+            }
+            else -> {
+                println("Conta negativa")
+            }
+        }
+
+        when {
+            saldo > 0.0 -> println("Saldo positivo")
+            saldo == 0.0 -> println("Conta zerada")
+            else -> println("Conta negativa")
+        }
+
+
+        //for loop
+        val items = listOf("banana", "laranja", "kiwi")
+        for (item in items) {
+            //println(item)
+        }
+
+        val items2 = listOf("apple", "banana", "maçã")
+        for (index in items2.indices) {
+//        println("Item at $index is ${items[index]}")
+        }
+
+        //while loop
+        val itens3 = listOf("Fruta1", "Fruta2", "Fruta3")
+        var index = 0
+
+        while (index < itens3.size) {
+//        println("item as $index is ${itens3[index]}")
+            index++
+
+        }
+
+    }
+
+
+    //Laços de Repetição
+    fun tabuada() {
+        val num = 5
+        var i = 1
+        for (i in 1..10) {
+            println("$i x $num = " + num * i)
+        }
+
+    }
+
+    fun loop() {
+
+        var i = 0
+        while (i < 5)
+        {
+        }
+
+        do {
+
+            val titular: String = "Johnny $i"
+            val numeroConta: Int = 1000 + i
+            var saldo: Double = i + 10.0
+
+
+            println("Titular: $titular")
+            println("Numero da conta: $numeroConta")
+            println("Saldo: $saldo")
+            println()
+            i++
+
+        } while (i < 5)
+
+
+        for (i in 1..5) {
+
+            if (i == 4) {
+                break
+            }
+            val titular: String = "Johnny $i"
+            val numeroConta: Int = 1000 + i
+            var saldo: Double = i + 10.0
+
+
+            println("Titular: $titular")
+            println("Numero da conta: $numeroConta")
+            println("Saldo: $saldo")
+            println()
+
+        }
+    }
+}
+
+
+class Empresa (
+    val nome: String,
+    val cnpj: String,
+    val endereco: String,
+    val faturamento: Double)
+{
+    fun imprimir(){
+        println("Nome: $nome")
+        println("CNPJ: $cnpj")
+        println("Endereço: $endereco")
+        println("Faturamento: $faturamento")
+    }
+
+    //    val banco = Empresa("Banco XYZ","1234534","Endereco da Empresa",5000.0)
+//    val otica = Empresa("Otica","6565656","Rua da Empresa",4500.0)
+//
+//    banco.imprimir()
+//    otica.imprimir()
+
+}
