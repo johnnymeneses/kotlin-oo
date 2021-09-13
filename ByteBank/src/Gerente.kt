@@ -1,9 +1,9 @@
-class Gerente : Funcionario {
+class Gerente : FuncionarioAdmin {
 
-        val senha: Int
 
-        constructor(nome: String,cpf: String,salario: Double,senha: Int) : super(nome = nome,cpf = cpf,salario = salario) {
-            this.senha = senha
+
+        constructor(nome: String,cpf: String,salario: Double,senha: Int) : super(nome = nome,cpf = cpf,salario = salario, senha = senha) {
+
         }
 
 
@@ -14,12 +14,7 @@ class Gerente : Funcionario {
             return (salario * 0.1) + salario
         }
 
-    fun autentica(senha: Int): Boolean{
-        val senhaCorreta=1234
 
-        return senha == senhaCorreta
-
-    }
 
 //    fun autentica(senha: Int){    }
 

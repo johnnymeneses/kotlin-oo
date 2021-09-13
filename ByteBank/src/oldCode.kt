@@ -30,8 +30,8 @@ class oldCode
 
         val calc = CalculadoraBonificacao()
 
-        calc.registra(funcG)
-        calc.registra(funcD)
+//        calc.registra(funcG)
+//        calc.registra(funcD)
         calc.registra(funcA)
         calc.registra(funcAx)
 
