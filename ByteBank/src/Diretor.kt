@@ -1,4 +1,12 @@
-class Diretor (gnome: String, gcpf: String, gsalario: Double, gsenha: Int, val plr: Double): FuncionarioAdmin(nome = gnome,cpf = gcpf, salario = gsalario, senha = gsenha) {
+class Diretor (gnome: String,
+               gcpf: String,
+               gsalario: Double,
+               gsenha: Int,
+               val plr: Double): FuncionarioAdmin(
+                    nome = gnome,
+                    cpf = gcpf,
+                    salario = gsalario,
+                senha = gsenha) {
 
     override val bonificacao: Double
         get() {

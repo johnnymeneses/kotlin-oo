@@ -1,15 +1,14 @@
 abstract class FuncionarioAdmin(
-    val nome: String,
-    val cpf: String,
-    val salario: Double,
-    val senha: Int) {
+    nome: String,
+    cpf: String,
+    salario: Double,
+    val senha: Int) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+
 
 //    open val bonificacao: Double
 //        get() {
 //            return salario * 0.1
 //        }
-
-    abstract val bonificacao: Double
 
     //Implementar função em classe abstrata?
     fun autentica(senha: Int): Boolean {
