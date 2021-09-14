@@ -7,7 +7,4 @@ class Analista (gnome: String, gcpf: String, gsalario: Double): Funcionario(nome
 
 
 
-//    fun autentica(senha: Int){    }
-
-
 }
