@@ -2,7 +2,7 @@ abstract class FuncionarioAdmin(
     nome: String,
     cpf: String,
     salario: Double,
-    val senha: Int) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+    val senha: Int) : Funcionario(nome = nome, cpf = cpf, salario = salario),IAutenticavel {
 
 
 //    open val bonificacao: Double
@@ -11,7 +11,7 @@ abstract class FuncionarioAdmin(
 //        }
 
     //Implementar função em classe abstrata?
-    fun autentica(senha: Int): Boolean {
+    override fun autentica(senha: Int): Boolean {
         if(this.senha == senha){
             return true
         }
