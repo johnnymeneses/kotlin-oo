@@ -1,11 +1,13 @@
 
 fun main()
 {
-    println("Byte Bank")
+    println("Bem vindo ao BytBank - Kotlin Edition. ")
 
 //    testaFuncionarios()
 //    testaAutenticacao()
-    testaContas()
+//    testaContas()
+
+
 }
 
 
