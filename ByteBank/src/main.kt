@@ -3,9 +3,9 @@ fun main()
 {
     println("Byte Bank")
 
-    testaFuncionarios()
-
-
+//    testaFuncionarios()
+//    testaAutenticacao()
+    testaContas()
 }
 
 

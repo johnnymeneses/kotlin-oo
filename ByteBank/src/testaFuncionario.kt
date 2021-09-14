@@ -15,13 +15,14 @@ fun testaFuncionarios() {
         //Bonificação (Salario * 0.3) + PLR
 
 //    Criar Gerente
-        val funcGerente
-
+        val funcGerente = Gerente("Gerente","55445",1000.0,5678)
+        //Bonificacao (Salario * 0.1) + salario
 //    Exibir Funcionarios criados
 
     println("Funcionario : ${funcAnalista.nome}, Salário:  ${funcAnalista.salario}")
     println("Funcionario : ${funcAuxiliar.nome}, Salário:  ${funcAuxiliar.salario}")
     println("Funcionario : ${funcDiretor.nome}, Salário:  ${funcDiretor.salario}")
+    println("Funcionario : ${funcGerente.nome}, Salário:  ${funcGerente.salario}")
 
 
 //    Calculo de Bonificação
@@ -29,6 +30,7 @@ fun testaFuncionarios() {
         bonifica.registra(funcAnalista)
         bonifica.registra(funcAuxiliar)
         bonifica.registra(funcDiretor)
+        bonifica.registra(funcGerente)
         println("")
         println("Total de Bonificações: ${bonifica.total}")
 
