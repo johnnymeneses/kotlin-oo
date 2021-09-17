@@ -13,19 +13,18 @@ class contaPoupanca: Conta {
     //Não permitir Saque negativo
     override fun sacarRecurso(valor: Double) : Boolean {
 
+        //Não permitir saque com valor negativo
         if(valor<=0){
-        println("Operacao com valor invalido cancelada")
-        return false
+            println("Operacao com valor invalido cancelada")
+            return false
         }
 
-
-        if(saldo>valor){
-            saldo-=valor
-            return true
-        } else
-        {
+        if(saldo<valor){
             println("Saldo Insuficiente. Operação cancelada")
             return false
+        }else{
+            saldo-=valor
+            return true
         }
 
     }
