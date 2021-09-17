@@ -3,37 +3,33 @@ import java.util.*
 class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta (titular, agencia, numeroConta)
 {
 
-
-
-
-//    override fun totalContasCriadas(): Int {
-//        return totalContasCriadas++
-//    }
-
-    init {
-        totalContasCriadas++
+    //Implementação de Depósito
+    //Não permitir Deposito zerado ou negativo
+    override fun depositaRecurso(valor: Double) {
+        if(valor<=0){
+            println("Valor de Depósito Inválido. Operação Cancelada")
+            return
+        } else {
+            this.saldo += valor
+        }
     }
 
-
-
-    //Implementação de Saque
-    //Não permitir Saque acima do saldo
-    //Não permitir Saque negativo
     override fun sacarRecurso(valor: Double) : Boolean {
 
+        //Não permitir saque com valor negativo
         if(valor<=0){
             println("Operacao com valor invalido cancelada")
             return false
         }
 
-        val valorComTaxa  = valor+0.5
+        val valorComTaxa  = valor+0.1
 
+        //Não permitir Saque acima do saldo
         if(saldo<valorComTaxa)
         {
             println("Saldo Insuficiente. Operação cancelada")
             return false
-        }else
-        {
+        }else {
             saldo-=valorComTaxa
             return true
         }
@@ -43,17 +39,16 @@ class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta (ti
 
     fun sacarRecursoSemTaxa(valor: Double) : Boolean {
 
+        //Não permitir saque com valor negativo
         if(valor<=0){
             println("Operacao com valor invalido cancelada")
             return false
         }
 
-        if(saldo<valor)
-        {
+        if(saldo<valor){
             println("Saldo Insuficiente. Operação cancelada")
             return false
-        }else
-        {
+        }else{
             saldo-=valor
             return true
         }
@@ -62,18 +57,7 @@ class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta (ti
     }
 
 
-    //Implementação de Depósito
-    //Não permitir Deposito zerado ou negativo
-    override fun depositaRecurso(valor: Double) {
-        if(valor<=0)
-        {
-            println("Valor de Depósito Inválido. Operação Cancelada")
-            return
-        }
-        else {
-            this.saldo += valor
-        }
-    }
+
 
 
     //Implementação de Transferência

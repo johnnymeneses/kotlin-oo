@@ -7,15 +7,6 @@ class contaPoupanca: Conta {
  }
 
 
-//    override fun totalContasCriadas(): Int {
-//        return totalContasCriadas++
-//    }
-//
-//    fun totalContasCriadas3(): Int {
-//        return totalContasCriadas++
-//    }
-
-
 
     //Implementação de Saque
     //Não permitir Saque acima do saldo

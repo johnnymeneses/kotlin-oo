@@ -13,8 +13,14 @@ fun testaCC()
 {
     val cc = contaCorrente("Conta Corrente",1234,4444)
     val cc2 = contaCorrente("Conta Corrente2 ",1234,4444)
+    val cc3 = contaCorrente("Conta Corrente2 ",1234,4444)
 
 
+
+
+
+
+    println("Total de contas Criadas ${cc.totalConta()}")
 
 
     println("Número da Conta: ${cc.numeroConta}")
