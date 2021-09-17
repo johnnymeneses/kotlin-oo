@@ -1,7 +1,20 @@
-class contaPoupanca(titular: String,
-                    agencia: Int,
-                    numeroConta: Int) : Conta (titular, agencia, numeroConta)
-{
+class contaPoupanca: Conta {
+
+
+    constructor(titular: String,agencia: Int,numeroConta: Int,) : super (titular, agencia, numeroConta,)
+ {
+//     totalContasCriadas
+ }
+
+
+//    override fun totalContasCriadas(): Int {
+//        return totalContasCriadas++
+//    }
+//
+//    fun totalContasCriadas3(): Int {
+//        return totalContasCriadas++
+//    }
+
 
 
     //Implementação de Saque
@@ -25,6 +38,8 @@ class contaPoupanca(titular: String,
         }
 
     }
+
+
 
     //Implementação de Depósito
     //Não permitir Deposito zerado ou negativo

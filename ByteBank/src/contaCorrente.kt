@@ -5,6 +5,17 @@ class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta (ti
 
 
 
+
+//    override fun totalContasCriadas(): Int {
+//        return totalContasCriadas++
+//    }
+
+    init {
+        totalContasCriadas++
+    }
+
+
+
     //Implementação de Saque
     //Não permitir Saque acima do saldo
     //Não permitir Saque negativo

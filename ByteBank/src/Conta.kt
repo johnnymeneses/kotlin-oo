@@ -6,12 +6,11 @@ abstract class Conta (val titular: String,val agencia: Int, val numeroConta: Int
     var total : Int = 1
     protected set
 
-    var TotalContasCriadas: Int =0
+    var totalContasCriadas: Int = 0
         protected set
 
 
-
-
+//    abstract fun totalContasCriadas(): Int
 
     abstract fun depositaRecurso(valor: Double)
 
