@@ -24,12 +24,78 @@ fun max (a: Int, b:Int){
 }
 
 
+fun condicional(): Boolean{
+
+    var senha: Int=1
+    var senhaCorreta: Int=1
+
+//    1 opção de IF
+    return senha == senhaCorreta
+
+//    2 Opção IF
+    if(senha == senhaCorreta) {
+        return true
+    }else {}
+        return false
+}
 
 
-fun condicional(){}
+//When no lugar do IF
+fun ifWhen()
+{
+    var saldo: Double = 0.0
 
-fun loopFor(){}
+    if (saldo > 0.0) {
+        println("Saldo positivo")
+    } else if (saldo == 0.0) {
+        println("Conta zerada")
 
-fun loopWhile(){}
+        when {
+            saldo > 0.0 -> println("Saldo positivo")
+            saldo == 0.0 -> println("Conta zerada")
+            else -> println("Conta negativa")
+        }
 
-fun loopWhen(){}
+    }
+}
+
+fun loopWhen(){
+    var saldo: Double = 0.0
+
+    when {
+        saldo > 0.0 -> println("Saldo positivo")
+        saldo == 0.0 -> println("Conta zerada")
+        else -> println("Conta negativa")
+    }
+
+fun loopFor(){
+//    Opção 1
+    val items = listOf("banana", "laranja", "kiwi")
+
+    for (item in items) {
+        println(item)
+    }
+
+    val items2 = listOf("apple", "banana", "maçã")
+    for (index in items2.indices) {
+        println("Item at $index is ${items[index]}")
+    }
+
+
+}
+
+fun loopWhile(){
+    val itens3 = listOf("Fruta1", "Fruta2", "Fruta3")
+    var index = 0
+
+    while (index < itens3.size) {
+        println("item as $index is ${itens3[index]}")
+        index++
+    }
+
+}
+
+
+
+
+}
