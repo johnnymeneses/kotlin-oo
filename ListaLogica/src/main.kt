@@ -1,8 +1,17 @@
 
 fun main()
 {
-    val ex01 = Ex01()
-    println("Area do Terreno 5 x 10: ${ex01.areaTerreno(10,5)}")
+//    val ex01 = Ex01()
+//    println("Area do Terreno 5 x 10: ${ex01.areaTerreno(10,5)}")
+
+
+
+
+    //Função com retorno - Opção 2
+//[chamada]
+//    fun soma2(a: Int, b: Int): Int = a+b
+
+
 }
 
 
