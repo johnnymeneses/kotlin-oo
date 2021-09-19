@@ -2,6 +2,9 @@ import java.util.Scanner
 
 fun main() {
 
+//      Ex01 - Tabuada
+      val tabuada = Ex01()
+      tabuada.tabuada(50)
 
 
 
