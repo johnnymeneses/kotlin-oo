@@ -2,31 +2,26 @@ import java.util.Scanner
 
 fun main() {
 
-//
+
 
 
 }
 
 
-//    Ex01
-//    val tabuada = Ex01()
-//    tabuada.tabuada(50)
+//      Ex01 - Tabuada
+//      val tabuada = Ex01()
+//      tabuada.tabuada(50)
+
+//      Ex02 - Área do terreno
+//      val terreno = Ex02()
+//      println(terreno.areaTerreno(5,4))
 
 
-//JetBrain Academy
+//      Ex03 - Par ou Impar
+//      val number = Ex03()
+//      println(number.parImpar(3))
 
-//    var x: Double = 0.0
-//        x = readLine()?.toDouble() ?:
-//        x.toDouble()
-//        println(x)
+//      Ex04 - Divisão
+//      val number = Ex04()
+//      println(number.divisao(10,1))
 
-
-//    val spell = "abra"
-//    println((spell + "cad").repeat(spell.length) + spell)
-
-
-//val month = "August"
-//    val day = 22
-//    val year = 2019
-//
-//    println("$month $day, $year")

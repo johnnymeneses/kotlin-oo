@@ -95,7 +95,49 @@ fun loopWhile(){
 
 }
 
+    fun exemploLoopins(){
+        var i: Int = 1
+        for (index in 1..1000)
+        {
+            println(index)
+        }
 
+        do {
+            println(i)
+            i++
+        }while(i<=1000)
+
+
+        while (i<=1000)
+        {  println(i)
+            i++
+        }
+
+
+
+    }
+
+fun jetAcademy(){
+    //JetBrain Academy
+
+//    var x: Double = 0.0
+//        x = readLine()?.toDouble() ?:
+//        x.toDouble()
+//        println(x)
+
+
+//    val spell = "abra"
+//    println((spell + "cad").repeat(spell.length) + spell)
+
+
+//val month = "August"
+//    val day = 22
+//    val year = 2019
+//
+//    println("$month $day, $year")
+
+
+}
 
 
 }
