@@ -1,8 +1,5 @@
 
-
-
-
-
+//Impar ou Par ?
 
 
 class Ex03{

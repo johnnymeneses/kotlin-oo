@@ -8,4 +8,20 @@ faça um algoritmo para ler as quantidades de pães e de broas, e depois calcula
 
 class Ex05{
 
+    fun padaria(paesVendidos: Int, broasVendidas: Int)
+    {
+        val paesTotal = paesVendidos * 0.12
+        val broasTotal = broasVendidas * 1.5
+
+        val poupanca = paesTotal + broasTotal
+
+        println("Foram vendidos $paesVendidos pães e $broasVendidas broas, totalizando R$ $poupanca")
+
+        println("É necessario guardar na poupança R$ "+ poupanca * 0.1)
+
+
+
+
+    }
+
 }

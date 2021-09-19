@@ -2,9 +2,9 @@ import java.util.Scanner
 
 fun main() {
 
-//      Ex01 - Tabuada
-      val tabuada = Ex01()
-      tabuada.tabuada(50)
+//      Ex05 - Padaria Paes e Broas
+      val money = Ex05()
+      money.padaria(400,220)
 
 
 
