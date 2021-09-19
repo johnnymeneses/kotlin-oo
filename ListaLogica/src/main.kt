@@ -1,8 +1,15 @@
 
 fun main()
 {
-    tabuada(400)
+
+
 }
+
+
+//    Ex01
+//    val tabuada = Ex01()
+//    tabuada.tabuada(50)
+
 
 
 
