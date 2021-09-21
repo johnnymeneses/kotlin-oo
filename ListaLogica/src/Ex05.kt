@@ -19,9 +19,6 @@ class Ex05{
 
         println("É necessario guardar na poupança R$ "+ poupanca * 0.1)
 
-
-
-
     }
 
 }
