@@ -1,5 +1,9 @@
 /*
 
+Escrever uma mídia que recebendo um número e retorna quais são os divisores desse número.  
+Em uma segunda versão, avisar se a soma dos divisores e a mesma do número informado.  Ex 28
+Terceira versão: dado um range, exibir quais números tem a soma de seus divisores exatamente igual a mumero informado
+
 Questionamentos sobre Orientação à Objetos
 
 Escreva em Java uma classe que represente um circulo no plano cartesiano. Forneça os seguintes membros de classe: a) Um construtor que receba o raio e um ponto (o centro do círculo); b) Um construtor que receba o raio e posicione o círculo na origem do espaço cartesiano; c) Métodos de acesso ao atributo raio do círculo; d) Métodos inflar e desinflar, que, respectivamente, aumentam e diminuem o raio do círculo de um dado valor; e) Métodos sobrecarregados, inflar e desinflar, que, respectivamente, aumentam e diminuem o raio do círculo de uma unidade; h) Métodos sobrecarregados mover, que: i) por default (sem parâmetros) levam o círculo para a origem do espaço 2D; ii) movem o círculo para um local indicado por dois parâmetros do tipo double (indicando o valor de abcissa e ordenada do ponto para onde o círculo se move); iii) movem o círculo para o local indicado por outro ponto. f) Método que retorna a área do círculo
