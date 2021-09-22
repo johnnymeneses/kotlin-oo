@@ -6,18 +6,53 @@ Terceira versão: dado um range, exibir quais números tem a soma de seus diviso
 
 class Ex51{
 
-    fun restoDivisao(number: Int){
+    fun numerosAmigos(num1: Int, num2: Int) {
+        var soma1: Int = 0
+        var soma2: Int = 0
+
+        for (index in 1..num1) {
+            if (num1 % index == 0) soma1 += index
+        }
+
+        for (indice in 1..num2) {
+            if (num2 % indice == 0) soma2 += indice
+        }
+
+        if (((soma1 - num1) == num2) && ((soma2 - num2) == num1))
+        {
+            println("Numeros Amigos")
+        }else
+        {
+            println("Numeros Comuns")
+        }
+
+    }
+
+
+
+
+
+
+//        for(index in 1..num1) {
+//            if (num1 % index == 0) soma1 += index
+//        }
+//        println("Soma dos divisores de $num1 : " + (soma1 - num1))
+    }
+
+
+    fun restoDivisao(num: Int){
         var soma: Int = 0
 
-        for(index in 1..number)
+        for(index in 1..num)
         {
-            if(number % index  == 0) {
+            if(num % index  == 0) {
                 println(index)
                 soma+=index
             }
 
         }
-        println("Soma dos divisores de $number : " + (soma - number))
+
+        println("Soma dos divisores de $num : " + (soma - num))
 
 
 
@@ -26,4 +61,3 @@ class Ex51{
     }
 
 
-}

@@ -4,7 +4,8 @@ fun main() {
 
 //Ex05
       val divisor = Ex51()
-      divisor.restoDivisao(220)
+      divisor.numerosAmigos(284,2210)
+//      divisor.restoDivisao(220)
 
 }
 
