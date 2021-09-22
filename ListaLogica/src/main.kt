@@ -2,11 +2,9 @@ import java.util.Scanner
 
 fun main() {
 
-//      Ex05 - Padaria Paes e Broas
-      val money = Ex05()
-      money.padaria(400,220)
-
-
+//Ex05
+      val divisor = Ex51()
+      divisor.restoDivisao(220)
 
 }
 
@@ -28,3 +26,6 @@ fun main() {
 //      val number = Ex04()
 //      println(number.divisao(10,1))
 
+//      Ex05 - Padaria Paes e Broas
+//      val money = Ex05()
+//      money.padaria(400,220)
