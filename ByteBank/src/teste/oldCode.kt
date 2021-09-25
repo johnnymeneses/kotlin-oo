@@ -1,4 +1,4 @@
-//class oldCode
+package teste//class oldCode
 //{
 //    fun main()
 //    {
@@ -15,50 +15,50 @@
 //        println("Bem vindo ao Byte Bank ")
 //        println("")
 //
-//        val cp= contaPoupanca("Johnnyy", 1234,5678)
-////        val cc = contaCorrente("Eder", 5678, 1234)
+//        val cp= modelos.contaPoupanca("Johnnyy", 1234,5678)
+////        val cc = modelos.contaCorrente("Eder", 5678, 1234)
 //
 ////    cp.depositaRecurso(50.0)
 ////    cc.depositaRecurso(50.0)
 //
-////        println("Saldo Conta Poupança ${cp.saldo}")
-////        println("Saldo Conta Corrente ${cc.saldo}")
+////        println("Saldo modelos.Conta Poupança ${cp.saldo}")
+////        println("Saldo modelos.Conta Corrente ${cc.saldo}")
 ////
 ////
 ////        cp.sacarRecurso(10.0)
 ////        cc.sacarRecurso(10.0)
 ////
-////        println("Novo Saldo Conta Poupança ${cp.saldo}")
-////        println("NOvo Saldo Conta Corrente ${cc.saldo}")
+////        println("Novo Saldo modelos.Conta Poupança ${cp.saldo}")
+////        println("NOvo Saldo modelos.Conta Corrente ${cc.saldo}")
 ////
 //////        cp.transfereRecurso(50.0,cc)
 ////
-////        println("Novo Saldo Conta Poupança ${cp.saldo}")
-////        println("NOvo Saldo Conta Corrente ${cc.saldo}")
+////        println("Novo Saldo modelos.Conta Poupança ${cp.saldo}")
+////        println("NOvo Saldo modelos.Conta Corrente ${cc.saldo}")
 //
 //    }
 //
 //
 //    fun testaFuncionario()
 //    {
-////        val funcJ = Funcionario("Johnny","123456",1000.0)
-////        println("Funcionario ${funcJ.bonificacao}")
+////        val funcJ = modelos.Funcionario("Johnny","123456",1000.0)
+////        println("modelos.Funcionario ${funcJ.bonificacao}")
 //
-//        val funcG = Gerente("Gerente","655454",1000.0,4567)
-//        println("Gerente ${funcG.bonificacao}")
+//        val funcG = modelos.Gerente("modelos.Gerente","655454",1000.0,4567)
+//        println("modelos.Gerente ${funcG.bonificacao}")
 //
-//        val funcD = Diretor("Diretor","123456",1000.0,1234,500.0)
-//        println("Diretor ${funcD.bonificacao}")
+//        val funcD = modelos.Diretor("modelos.Diretor","123456",1000.0,1234,500.0)
+//        println("modelos.Diretor ${funcD.bonificacao}")
 //
-//        val funcA = Analista("Analista","65465465",1000.0)
-//        println("Analista ${funcA.bonificacao}")
+//        val funcA = modelos.Analista("modelos.Analista","65465465",1000.0)
+//        println("modelos.Analista ${funcA.bonificacao}")
 //
-//        val funcAx = Auxiliar("Auxiliar","65465465",1000.0)
-//        println("Auxiliar ${funcA.bonificacao}")
+//        val funcAx = modelos.Auxiliar("modelos.Auxiliar","65465465",1000.0)
+//        println("modelos.Auxiliar ${funcA.bonificacao}")
 //
 //
 //
-//        val calc = CalculadoraBonificacao()
+//        val calc = modelos.CalculadoraBonificacao()
 //
 ////        calc.registra(funcG)
 ////        calc.registra(funcD)
@@ -72,10 +72,10 @@
 //
 //    fun testaAutenticacao(){
 //
-//        val gerente = Gerente("Nome Gerente","123456",5000.0,1234)
-//        val diretor = Diretor("Nome Diretor","9879789",8000.0,1548,850.0)
+//        val gerente = modelos.Gerente("Nome modelos.Gerente","123456",5000.0,1234)
+//        val diretor = modelos.Diretor("Nome modelos.Diretor","9879789",8000.0,1548,850.0)
 //
-//        val acesso = SistemaInterno()
+//        val acesso = modelos.SistemaInterno()
 //
 //        acesso.validaEntrada(gerente,12234)
 //        acesso.validaEntrada(diretor,1548)
@@ -85,26 +85,26 @@
 //
 //    fun testaContaDiferente()
 //    {
-////        val cp= contaPoupanca("Johnnyy", 1234,5678)
-////        val cc = contaCorrente("Eder", 5678, 1234)
+////        val cp= modelos.contaPoupanca("Johnnyy", 1234,5678)
+////        val cc = modelos.contaCorrente("Eder", 5678, 1234)
 ////
 //////        cp.depositaRecurso(50.0)
 //////        cc.depositaRecurso(50.0)
 ////
-////        println("Saldo Conta Poupança ${cp.saldo}")
-////        println("Saldo Conta Corrente ${cc.saldo}")
+////        println("Saldo modelos.Conta Poupança ${cp.saldo}")
+////        println("Saldo modelos.Conta Corrente ${cc.saldo}")
 ////
 ////
 ////        cp.sacarRecurso(10.0)
 ////        cc.sacarRecurso(10.0)
 ////
-////        println("Novo Saldo Conta Poupança ${cp.saldo}")
-////        println("NOvo Saldo Conta Corrente ${cc.saldo}")
+////        println("Novo Saldo modelos.Conta Poupança ${cp.saldo}")
+////        println("NOvo Saldo modelos.Conta Corrente ${cc.saldo}")
 ////
 ////        cp.transfereRecurso(50.0,cc)
 ////
-////        println("Novo Saldo Conta Poupança ${cp.saldo}")
-////        println("NOvo Saldo Conta Corrente ${cc.saldo}")
+////        println("Novo Saldo modelos.Conta Poupança ${cp.saldo}")
+////        println("NOvo Saldo modelos.Conta Corrente ${cc.saldo}")
 //    }
 //
 //    //Exibir se um numero é par ou impar
@@ -121,8 +121,8 @@
 //        println("Bem vindo ao BytBank - Kotlin Edition. ")
 //        println("")
 //
-//        val contaJ =  Conta(titular = "Johnny", numero=12345) //exemplo com labels
-//        val contaM = Conta("Maria",65487)
+//        val contaJ =  modelos.Conta(titular = "Johnny", numero=12345) //exemplo com labels
+//        val contaM = modelos.Conta("Maria",65487)
 //
 //        contaJ.depositaConta(100.0)
 //
@@ -160,7 +160,7 @@
 //
 //
 //
-//    class Conta (val titular: String, val numero: Int) {
+//    class modelos.Conta (val titular: String, val numero: Int) {
 //
 //        var saldo = 0.0
 //            private set
@@ -184,7 +184,7 @@
 //            }
 //        }
 //
-//        fun transfereConta(valor: Double, contaDestino: Conta) {
+//        fun transfereConta(valor: Double, contaDestino: modelos.Conta) {
 //
 //            if(valor > saldo){
 //                println("Saldo $saldo. Transferencia de $valor. Saldo Insuficiente para esta operação")

@@ -1,3 +1,7 @@
+package modelos
+
+import modelos.FuncionarioAdmin
+
 class Gerente : FuncionarioAdmin {
 
 

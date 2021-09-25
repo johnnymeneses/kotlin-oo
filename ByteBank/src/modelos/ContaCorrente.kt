@@ -1,6 +1,8 @@
-import java.util.*
+package modelos
 
-class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta (titular, agencia, numeroConta)
+import modelos.Conta
+
+class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta(titular, agencia, numeroConta)
 {
 
     //Implementação de Depósito

@@ -1,3 +1,7 @@
+package modelos
+
+import modelos.IAutenticavel
+
 class SistemaInterno {
 
     fun validaEntrada(admin: IAutenticavel, senha: Int){

@@ -1,4 +1,6 @@
-abstract class Conta (val titular: String,val agencia: Int, val numeroConta: Int ) {
+package modelos
+
+abstract class Conta (val titular: String, val agencia: Int, val numeroConta: Int ) {
 
     var saldo: Double = 100.0
     protected set

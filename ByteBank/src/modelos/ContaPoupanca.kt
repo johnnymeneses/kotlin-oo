@@ -1,3 +1,7 @@
+package modelos
+
+import modelos.Conta
+
 class contaPoupanca: Conta {
 
 
@@ -50,7 +54,7 @@ class contaPoupanca: Conta {
     //Não permitir Transferencia negativo
     //Não permitir transferência pra própria conta (Mensagem de erro?)
     override fun transfereRecurso(valor: Double, contaDestino: Conta){
-//        if(Conta == contaDestino)
+//        if(modelos.Conta == contaDestino)
 //        {
 //            return
 //        }

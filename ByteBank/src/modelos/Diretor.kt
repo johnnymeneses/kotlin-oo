@@ -1,3 +1,5 @@
+package modelos
+
 class Diretor (gnome: String,
                gcpf: String,
                gsalario: Double,
