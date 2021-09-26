@@ -1,3 +1,5 @@
+package logica
+
 fun declaraVariavel(){
 
 //    Variável com valor imutável
@@ -9,13 +11,13 @@ fun declaraVariavel(){
 }
 
 //Função com retorno - Opção 1
-//[chamada] println(soma(5,6))
+//[chamada] println(logica.soma(5,6))
 fun soma(a: Int, b: Int): Int {
     return a+b
 }
 
 //Função com retorno - Opção 2
-//[chamada] println(soma2(5,44))
+//[chamada] println(logica.soma2(5,44))
 fun soma2(a: Int, b: Int): Int = a+b
 
 //Função sem retorno

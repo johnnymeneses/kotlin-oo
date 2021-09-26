@@ -1,3 +1,3 @@
-/*
+package logica/*
 Crie uma classe IntegerSet para representar um conjunto de números inteiros. Cada objeto da classe IntegerSet pode armazenar inteiros no intervalo de 0 até um valor máximo específico para cada objeto. O conjunto deve ser representado por um array de booleanos. O elemento do array na posição i é verdadeiro se e somente se o inteiro i pertencer ao conjunto. O construtor inicializa o objeto como um conjunto vazio (isto é, um conjunto cuja representação de array contém todos os valores falso). Forneça métodos para implementar as operações de união, interseção e diferença de conjuntos. Forneça um método para inserir um novo elemento no conjunto e outro método para excluir um elemento do conjunto. Forneça ainda um método para converter um conjunto para string. Faça uma aplicação para testar a classe.
  */

@@ -1,4 +1,4 @@
-/*
+package logica/*
 
 
 
@@ -60,9 +60,9 @@ Construa a tabela de multiplicação de números de 1 a 10 (ex.: 1 x 1 = 1, 1 x 
 Determine o número de dígitos de um número informado.
 Considere os programas a seguir, que leem um código repetidamente e imprimem o código lido até que o código lido seja igual a -1. O código -1 não deve ser impresso.
 
-Calcule a série de Fibonacci para um número inteiro não negativo informado pelo usuário. A série de Fibonacci inicia com os números F0 = 0 e F1 = 1, e cada número posterior equivale à soma dos dois números anteriores (Fn = Fn-1 + Fn-2). Por exemplo, caso o usuário informe o número 9, o resultado seria: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+Calcule a série de Fibonacci para um número inteiro não negativo informado pelo usuário. A série de Fibonacci inicia com os números F0 = 0 e F1 = 1, e cada número posterior equivale à logica.soma dos dois números anteriores (Fn = Fn-1 + Fn-2). Por exemplo, caso o usuário informe o número 9, o resultado seria: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 
-Calcule o retorno de um investimento financeiro fazendo as contas mês a mês, sem usar a fórmula de juros compostos. O usuário deve informar quanto será investido por mês e qual será a taxa de juros mensal. O programa deve informar o saldo do investimento após um ano (soma das aplicações mês a mês considerando os juros compostos), e perguntar ao usuário se ele deseja que seja calculado o ano seguinte, sucessivamente. Por exemplo, caso o usuário deseje investir R$ 100,00 por mês, e tenha uma taxa de juros de 1% ao mês, o programa forneceria a seguinte saída: Saldo do investimento após 1 ano: 1280.9328043328942 Deseja processar mais um ano? (S/N)
+Calcule o retorno de um investimento financeiro fazendo as contas mês a mês, sem usar a fórmula de juros compostos. O usuário deve informar quanto será investido por mês e qual será a taxa de juros mensal. O programa deve informar o saldo do investimento após um ano (logica.soma das aplicações mês a mês considerando os juros compostos), e perguntar ao usuário se ele deseja que seja calculado o ano seguinte, sucessivamente. Por exemplo, caso o usuário deseje investir R$ 100,00 por mês, e tenha uma taxa de juros de 1% ao mês, o programa forneceria a seguinte saída: Saldo do investimento após 1 ano: 1280.9328043328942 Deseja processar mais um ano? (S/N)
 
 Calcule a raiz quadrada aproximada de um número inteiro informado pelo usuário, respeitando o erro máximo também informado pelo usuário. Não utilize funções predefinidas
 
