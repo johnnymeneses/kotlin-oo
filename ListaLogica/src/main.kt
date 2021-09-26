@@ -6,6 +6,8 @@ fun main() {
 
 
 
+
+
 }
 
 
@@ -47,3 +49,11 @@ fun main() {
 //      val divisor = Ex51()
 //      divisor.numerosAmigos(284,2210)
 //      divisor.logica.restoDivisao(220)
+
+//Ex09
+// val ex09 = Ex09()
+//    ex09.qtdeDias(31,12)
+
+//Ex10
+//var ex10 = Ex10()
+//    ex10.mediaPonderada(1,1,1)
