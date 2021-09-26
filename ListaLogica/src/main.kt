@@ -45,12 +45,6 @@ fun main() {
 //    val ex08 = Ex08()
 //        ex08.pesoPrato(1.465)
 
-
-//      logica.Ex51
-//      val divisor = Ex51()
-//      divisor.numerosAmigos(284,2210)
-//      divisor.logica.restoDivisao(220)
-
 //Ex09
 // val ex09 = Ex09()
 //    ex09.qtdeDias(31,12)
@@ -62,3 +56,8 @@ fun main() {
 //Ex11
 //    val ex11 = Ex11()
 //    ex11.vendaCamisetas(1,1,1)
+
+//    Ex12
+//      val divisor = Ex51()
+//      divisor.numerosAmigos(284,2210)
+//      divisor.logica.restoDivisao(220)
