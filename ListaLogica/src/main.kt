@@ -8,6 +8,7 @@ fun main() {
 
 
 
+
 }
 
 
@@ -57,3 +58,7 @@ fun main() {
 //Ex10
 //var ex10 = Ex10()
 //    ex10.mediaPonderada(1,1,1)
+
+//Ex11
+//    val ex11 = Ex11()
+//    ex11.vendaCamisetas(1,1,1)
