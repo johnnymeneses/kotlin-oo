@@ -6,6 +6,7 @@ fun main()
 //    testaFuncionarios()
 //    testaAutenticacao()
 //    testaContas()
+    testaEndereco()
 
 
 }

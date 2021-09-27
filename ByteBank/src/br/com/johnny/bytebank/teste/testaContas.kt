@@ -24,11 +24,6 @@ fun testaCC()
     val cc3 = contaCorrente(pedro,1234,4444)
 
 
-
-
-
-
-
 //    println("Total de contas Criadas ${cc.totalConta()}")
 
 

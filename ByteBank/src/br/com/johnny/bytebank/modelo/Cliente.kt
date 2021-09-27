@@ -3,7 +3,8 @@ package br.com.johnny.bytebank.modelo
 class Cliente (
     val nome:String,
     val cpf: String,
-    val senha: Int
+    val senha: Int,
+    val endereco: Endereco = Endereco() //Tecnica para não exigir que o endereço seja instanciao sempre
         ) : IAutenticavel {
 
     override fun autentica(senha: Int): Boolean {
