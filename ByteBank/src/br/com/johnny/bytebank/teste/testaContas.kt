@@ -1,10 +1,11 @@
+import br.com.johnny.bytebank.modelo.Cliente
 import modelos.contaCorrente
 import modelos.contaPoupanca
 
 fun testaContas()
 {
 
-//   testaCP()
+   testaCP()
     testaCC()
 
 
@@ -14,9 +15,14 @@ fun testaContas()
 
 fun testaCC()
 {
-    val cc = contaCorrente("br.com.johnny.bytebank.modelo.Conta Corrente",1234,4444)
-    val cc2 = contaCorrente("br.com.johnny.bytebank.modelo.Conta Corrente2 ",1234,4444)
-    val cc3 = contaCorrente("br.com.johnny.bytebank.modelo.Conta Corrente2 ",1234,4444)
+    val john = Cliente ("johnn","1234578",12345)
+    val maria = Cliente ("Maria","1234578",12345)
+    val pedro = Cliente ("Maria","1234578",12345)
+
+    val cc = contaCorrente(john,1234,4444)
+    val cc2 = contaCorrente(maria,1234,4444)
+    val cc3 = contaCorrente(pedro,1234,4444)
+
 
 
 
@@ -61,9 +67,15 @@ fun testaCC()
 fun testaCP()
 {
 
+    val john = Cliente ("johnn","1234578",12345)
+    val maria = Cliente ("Maria","1234578",12345)
+    val pedro = Cliente ("Maria","1234578",12345)
 
-    val cp = contaPoupanca("br.com.johnny.bytebank.modelo.Conta Poupança",1234,4444)
-    val cp2 = contaPoupanca("br.com.johnny.bytebank.modelo.Conta Poupança2 ",1234,4444)
+    val cp = contaPoupanca(john,1234,4444)
+    val cp2 = contaPoupanca(maria,1234,4444)
+    val cp3 = contaPoupanca(pedro,1234,4444)
+
+
 
 
 

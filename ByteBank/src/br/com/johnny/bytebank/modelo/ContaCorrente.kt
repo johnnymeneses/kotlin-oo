@@ -1,8 +1,9 @@
 package modelos
 
+import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Conta
 
-class contaCorrente(titular: String, agencia: Int, numeroConta: Int) : Conta(titular, agencia, numeroConta)
+class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(titular, agencia, numeroConta)
 {
 
     //Implementação de Depósito

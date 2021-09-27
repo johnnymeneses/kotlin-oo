@@ -1,6 +1,6 @@
 package br.com.johnny.bytebank.modelo
 
-abstract class Conta (val titular: String, val agencia: Int, val numeroConta: Int ) {
+abstract class Conta (val titular: Cliente, val agencia: Int, val numeroConta: Int ) {
 
     var saldo: Double = 100.0
     protected set

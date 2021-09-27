@@ -1,11 +1,12 @@
 package modelos
 
+import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Conta
 
 class contaPoupanca: Conta {
 
 
-    constructor(titular: String,agencia: Int,numeroConta: Int,) : super (titular, agencia, numeroConta,)
+    constructor(titular: Cliente, agencia: Int, numeroConta: Int,) : super (titular, agencia, numeroConta,)
  {
 //     totalContasCriadas
  }
