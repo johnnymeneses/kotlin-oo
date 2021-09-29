@@ -1,4 +1,5 @@
 import br.com.johnny.bytebank.modelo.Cliente
+import br.com.johnny.bytebank.modelo.Conta
 import modelos.contaCorrente
 import modelos.contaPoupanca
 
@@ -7,6 +8,8 @@ fun testaCriaContas()
 {
     criaCP()
     criaCC()
+
+    println("Total de contas criadas: ${Conta.total}")
 }
 
 

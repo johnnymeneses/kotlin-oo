@@ -7,11 +7,11 @@ fun main()
 
 //    testaFuncionarios()
 //    testaAutenticacao()
-    testaContas()
+//    testaContas()
 //    testaEndereco()
 //    testaCodigoNovo()
-//    testaCriaContas()
-    println("Total de contas criadas: ${Conta.total}")
+    testaCriaContas()
+
 
 }
 
