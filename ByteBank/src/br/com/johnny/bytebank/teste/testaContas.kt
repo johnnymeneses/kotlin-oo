@@ -27,7 +27,7 @@ fun testaCC()
 //    println("Total de contas Criadas ${cc.totalConta()}")
 
 
-    println("Número da br.com.johnny.bytebank.modelo.Conta: ${cc.numeroConta}")
+    println("Número da Conta: ${cc.numeroConta}")
     println("Agência: ${cc.agencia}")
     println("Saldo R$: ${cc.saldo}")
     println("")
@@ -47,10 +47,10 @@ fun testaCC()
     println("Transferencia")
 
 
-    println("br.com.johnny.bytebank.modelo.Conta Corrente 1 ")
+    println("Conta Corrente 1 ")
     println("Saldo R$: ${cc.saldo}")
     println("")
-    println("br.com.johnny.bytebank.modelo.Conta Corrente 2 ")
+    println("Conta Corrente 2 ")
     println("Saldo R$: ${cc2.saldo}")
 
     cc.transfereRecurso(50.0,cc2)
@@ -76,10 +76,10 @@ fun testaCP()
 
 
 
-    println("br.com.johnny.bytebank.modelo.Conta Poupança")
+    println("Conta Poupança")
 
 
-    println("Número da br.com.johnny.bytebank.modelo.Conta: ${cp.numeroConta}")
+    println("Número da Conta: ${cp.numeroConta}")
     println("Agência: ${cp.agencia}")
     println("Saldo R$: ${cp.saldo}")
     println("")
@@ -99,10 +99,10 @@ fun testaCP()
     println("Transferencia")
 
 
-    println("br.com.johnny.bytebank.modelo.Conta Poupança 1 ")
+    println("Conta Poupança 1 ")
     println("Saldo R$: ${cp.saldo}")
     println("")
-    println("br.com.johnny.bytebank.modelo.Conta Poupança 2 ")
+    println("Conta Poupança 2 ")
     println("Saldo R$: ${cp2.saldo}")
 
     cp.transfereRecurso(50.0,cp)

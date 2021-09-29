@@ -1,3 +1,5 @@
+import br.com.johnny.bytebank.modelo.Conta
+
 
 fun main()
 {
@@ -5,10 +7,11 @@ fun main()
 
 //    testaFuncionarios()
 //    testaAutenticacao()
-//    testaContas()
+    testaContas()
 //    testaEndereco()
-
-    testaCodigoNovo()
+//    testaCodigoNovo()
+//    testaCriaContas()
+    println("Total de contas criadas: ${Conta.total}")
 
 }
 
