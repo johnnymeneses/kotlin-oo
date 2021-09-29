@@ -8,6 +8,7 @@ fun main()
 //    testaContas()
 //    testaEndereco()
 
+    testaCodigoNovo()
 
 }
 
