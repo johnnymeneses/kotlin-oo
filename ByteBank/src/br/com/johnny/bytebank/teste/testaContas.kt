@@ -1,13 +1,13 @@
 import br.com.johnny.bytebank.modelo.Cliente
+import br.com.johnny.bytebank.modelo.Conta
 import modelos.contaCorrente
 import modelos.contaPoupanca
 
 fun testaContas()
 {
 
-   testaCP()
+    testaCP()
     testaCC()
-
 
 
 }
@@ -24,7 +24,7 @@ fun testaCC()
     val cc3 = contaCorrente(pedro,1234,4444)
 
 
-//    println("Total de contas Criadas ${cc.totalConta()}")
+
 
 
     println("Número da Conta: ${cc.numeroConta}")

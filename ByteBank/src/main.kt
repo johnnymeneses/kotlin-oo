@@ -10,7 +10,7 @@ fun main()
 //    testaContas()
 //    testaEndereco()
 //    testaCodigoNovo()
-//    testaCriaContas()
+    testaCriaContas()
 
 
 

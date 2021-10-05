@@ -9,7 +9,8 @@ fun testaCriaContas()
     criaCP()
     criaCC()
 
-    println("Total de contas criadas: ${Conta.total}")
+    println("Total de contas correntes criadas ${contaCorrente.total}")
+    println("Total de contas Criadas ${Conta.total}")
 }
 
 
