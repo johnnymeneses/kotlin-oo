@@ -6,6 +6,17 @@ import br.com.johnny.bytebank.modelo.Conta
 class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(titular, agencia, numeroConta)
 {
 
+//    Contador especifico de contas correntes
+    companion object contaCC{
+        var total = 0
+            private set
+    }
+
+    init {
+        total++
+        println("Criando contas correntes")
+    }
+
     //Implementação de Depósito
     //Não permitir Deposito zerado ou negativo
     override fun depositaRecurso(valor: Double) {

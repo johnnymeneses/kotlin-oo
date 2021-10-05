@@ -8,6 +8,15 @@ abstract class Funcionario(
 
     abstract val bonificacao: Double
 
+    companion object contaFuncionarios{
+        var total = 0
+            private set
+    }
+
+    init {
+        total++
+        println("Criando Funcionarios")
+    }
 
 
 }
