@@ -5,3 +5,6 @@ package logica
  * Após o aumento, desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final.
  */
 
+fun aumentaSalario(){
+
+}
