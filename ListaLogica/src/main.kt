@@ -6,9 +6,11 @@ fun main() {
 
         println("Lista Lógica")
 
-//        Ex13 - Ola
-        val ex13 = ex13()
-        ex13.nomeOla("Johnny")
+//        Ex25 - Desconto Loja
+          val ex25 = ex25()
+          ex25.desconto("blusa",250.0,10.0)
+
+
 
 
 
@@ -66,6 +68,10 @@ fun main() {
 //      divisor.numerosAmigos(284,2210)
 //      divisor.logica.restoDivisao(220)
 
+//        Ex13 - Ola
+//        val ex13 = ex13()
+//        ex13.nomeOla("Johnny")
+
 //  Ex14
 //    val ex14 = Ex14()
 //    ex14.aumentaSalario(1000.0)
@@ -74,6 +80,11 @@ fun main() {
 //        Ex21 - Custo com chip
 //        val ex21 = ex21()
 //        ex21.chipFrango(1)
+
+//        Ex22 - Novelos
+//        val ex22 = ex22()
+//        ex22.novelos(11)
+
 
 //      Ex23 - Quantos litros?
 //        val ex23 = ex23()
@@ -96,3 +107,4 @@ fun main() {
 //        Ex28 - Divisao
 //        val ex28 = ex28()
 //        ex28.divisao(10,4)
+
