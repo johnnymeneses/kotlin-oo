@@ -8,7 +8,7 @@ fun main() {
 
 //        Ex25 - Desconto Loja
           val ex25 = ex25()
-          ex25.desconto("Blusa",250.0,10.0)
+          ex25.desconto("blusa",250.0,10.0)
 
 
 
