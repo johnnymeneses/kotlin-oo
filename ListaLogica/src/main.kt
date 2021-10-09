@@ -9,7 +9,6 @@ fun main() {
 
 
 
-
 }
 
 
@@ -66,3 +65,12 @@ fun main() {
 //  Ex14
 //    val ex14 = Ex14()
 //    ex14.aumentaSalario(1000.0)
+
+
+//        Ex21 - Custo com chip
+//        val ex21 = ex21()
+//        ex21.chipFrango(1)
+
+//      Ex23 - Quantos litros?
+//        val ex23 = ex23()
+//        ex23.qtosLitros(1,1,1)
