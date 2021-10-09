@@ -4,10 +4,9 @@ fun main() {
 
         println("Lista Lógica")
 
-//      Ex24 - Cofrinho
-//        val ex24 = ex24()
-//        ex24.confrinho(0,5,0,0,2,1)
-
+//        Ex26 - Suco de Maracuja
+        val ex26 = ex26()
+        ex26.sucoMaracuja(10)
 
 
 
@@ -76,3 +75,7 @@ fun main() {
 //      Ex23 - Quantos litros?
 //        val ex23 = ex23()
 //        ex23.qtosLitros(1,1,1)
+
+//      Ex24 - Cofrinho
+//        val ex24 = ex24()
+//        ex24.confrinho(0,5,0,0,2,1)
