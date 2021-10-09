@@ -19,14 +19,14 @@ Crie uma classe Matriz que represente uma matriz matemática. Forneça um constr
 
 :::1 Crie um algoritmo que calcule a área de um retângulo.
 
-:::2 Crie um algoritmo que calcule o desconto de um produto. O usuário deverá informar o Nome, valor do produto e a porcentagem de desconto a ser calculada.
+
 
 :::3 – Desenvolva uma calculadora, onde será necessário entrar com a operação, primeiro e segundo valor, exiba o resultado na tela.
 
 :::4 – Desenvolva um algoritmo que solicite a entrada da idade de um determinado usuário, se for menor que 18 anos exiba na cor vermelha “Sem permissão”, caso seja maior ou igual a 18 anos exiba na cor verde “Permissão concedida”.
 
 
-:::5 – Desenvolva um método que receba por parâmetro o um nome, e retorne a frase “Olá meu nome é: {nome recebido}”.
+
 
 :::6 – Desenvolva um algoritmo que solicite a entrada de uma frase, após isto troque todas as letras A ou a por &, porém não utilize o método Replace().
 

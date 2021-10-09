@@ -1,9 +1,14 @@
 package logica
 
+
+
 fun main() {
 
         println("Lista Lógica")
 
+//        Ex13 - Ola
+        val ex13 = ex13()
+        ex13.nomeOla("Johnny")
 
 
 
