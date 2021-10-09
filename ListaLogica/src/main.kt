@@ -4,7 +4,9 @@ fun main() {
 
         println("Lista Lógica")
 
-
+//      Ex24 - Cofrinho
+//        val ex24 = ex24()
+//        ex24.confrinho(0,5,0,0,2,1)
 
 
 
