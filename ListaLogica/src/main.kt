@@ -2,6 +2,7 @@ package logica
 
 fun main() {
 
+        println("Lista Lógica")
 
 
 
@@ -61,3 +62,7 @@ fun main() {
 //      val divisor = Ex51()
 //      divisor.numerosAmigos(284,2210)
 //      divisor.logica.restoDivisao(220)
+
+//  Ex14
+//    val ex14 = Ex14()
+//    ex14.aumentaSalario(1000.0)
