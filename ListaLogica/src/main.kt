@@ -87,3 +87,7 @@ fun main() {
 //        Ex27 - Multplica 3
 //        val ex27 = ex27()
 //        println(ex27.multiplica3(2,2,3))
+
+//        Ex28 - Divisao
+//        val ex28 = ex28()
+//        ex28.divisao(10,4)
