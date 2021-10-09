@@ -6,14 +6,6 @@ fun main() {
 
         println("Lista Lógica")
 
-//        Ex25 - Desconto Loja
-          val ex25 = ex25()
-          ex25.desconto("blusa",250.0,10.0)
-
-
-
-
-
 
 }
 
@@ -94,6 +86,9 @@ fun main() {
 //        val ex24 = ex24()
 //        ex24.confrinho(0,5,0,0,2,1)
 
+//        Ex25 - Desconto Loja
+//          val ex25 = ex25()
+//          ex25.desconto("blusa",250.0,10.0)
 
 //        Ex26 - Suco de Maracuja
 //        val ex26 = ex26()
@@ -108,3 +103,10 @@ fun main() {
 //        val ex28 = ex28()
 //        ex28.divisao(10,4)
 
+//        Ex29 - Media Ponderada
+//        val ex29 = ex29()
+//        ex29.mediaPonderada(8,6)
+
+//        Ex30 - Desconto de 10%
+//          val ex30 = ex30()
+//        ex30.desconto(500.0)
