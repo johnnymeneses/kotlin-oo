@@ -1,9 +1,8 @@
 import br.com.johnny.bytebank.modelo.Endereco
 
 
-fun main()
-{
-    println("Bem vindo ao BytBank - Kotlin Edition. ")
+fun main() {
+        println("Bem vindo ao BytBank - Kotlin Edition. ")
 
 
 //    testaFuncionarios()
@@ -15,24 +14,27 @@ fun main()
 //    testaTry()
 
 
-        println()
-        println(1)
-        println(1.0)
-        println(true)
-        println("teste")
+      val endereco = Endereco()
 
-
-
-
-
-
-
-
-
-
-
-
+        imprime(Any())
+        imprime(1)
+        imprime(1.0)
+        imprime(endereco)
 }
+
+
+fun imprime(valor: Any): Unit{
+        println(valor)
+}
+
+
+
+
+
+
+
+
+
 
 
 
