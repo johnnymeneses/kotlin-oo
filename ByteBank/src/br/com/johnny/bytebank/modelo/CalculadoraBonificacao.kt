@@ -12,5 +12,14 @@ class CalculadoraBonificacao {
     }
 
 
+//  Opção com Any
+    fun registraAny(funcionario: Any){
+        funcionario as Funcionario
+        this.total+=funcionario.bonificacao
+    }
+    //Problema do cast é poder enviar qualquer valor
+    //    bonifica.registra(1)
+    //    java.lang.ClassCastException
+
 
 }

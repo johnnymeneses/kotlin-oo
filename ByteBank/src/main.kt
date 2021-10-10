@@ -4,7 +4,6 @@ import br.com.johnny.bytebank.modelo.Endereco
 fun main() {
         println("Bem vindo ao BytBank - Kotlin Edition. ")
 
-
 //    testaFuncionarios()
 //    testaAutenticacao()
 //    testaContas()
@@ -12,20 +11,25 @@ fun main() {
 //    testaCodigoNovo()
 //    testaCriaContas()
 //    testaTry()
+//
+    val endereco = Endereco(numero=20, logradouro="rua de baixo", cep = "000000")
+    val  enderecoNovo = Endereco(numero= 20, logradouro = "rua de baixo", cep = "000000")
+
+//   equals: indica se algum dos objetos é igual ao outro
+    println(endereco.equals(enderecoNovo)) //false
+    println(endereco.equals(endereco)) //true
 
 
-      val endereco = Endereco()
+    println(endereco.hashCode())//2093631819
+    println(enderecoNovo.hashCode())//2074407503
 
-        imprime(Any())
-        imprime(1)
-        imprime(1.0)
-        imprime(endereco)
+        println(endereco.toString()) //br.com.johnny.bytebank.modelo.Endereco@7cca494b
+        println(enderecoNovo.toString()) //br.com.johnny.bytebank.modelo.Endereco@7ba4f24f
+
+
+
 }
 
-
-fun imprime(valor: Any): Unit{
-        println(valor)
-}
 
 
 

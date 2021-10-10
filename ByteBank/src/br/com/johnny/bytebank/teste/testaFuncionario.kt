@@ -36,6 +36,7 @@ fun testaFuncionarios() {
         bonifica.registra(funcAuxiliar)
         bonifica.registra(funcDiretor)
         bonifica.registra(funcGerente)
+
         println("")
         println("Total de Bonificações: ${bonifica.total}")
 
