@@ -4,7 +4,7 @@ package logica
 
 fun main() {
 
-        println("Lista Lógica")
+        println("Lista Lógica New")
 
 
 }
