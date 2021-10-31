@@ -24,7 +24,7 @@ init{
 }
     abstract fun depositaRecurso(valor: Double)
 
-    abstract fun sacarRecurso(valor: Double): Boolean
+    abstract fun sacarRecurso(valor: Double)
 
     abstract fun transfereRecurso(valor: Double, contaDestino: Conta)
 

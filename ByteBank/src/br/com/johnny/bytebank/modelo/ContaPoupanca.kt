@@ -1,5 +1,6 @@
 package modelos
 
+import br.com.johnny.bytebank.exception.SaldoInsuficienteException
 import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Conta
 
@@ -16,21 +17,21 @@ class contaPoupanca: Conta {
     //Implementação de Saque
     //Não permitir Saque acima do saldo
     //Não permitir Saque negativo
-    override fun sacarRecurso(valor: Double) : Boolean {
+    override fun sacarRecurso(valor: Double) {
 
         //Não permitir saque com valor negativo
         if(valor<=0){
             println("Operacao com valor invalido cancelada")
-            return false
+            throw SaldoInsuficienteException()
         }
 
         if(saldo<valor){
             println("Saldo Insuficiente. Operação cancelada")
-            return false
-        }else{
-            saldo-=valor
-            return true
+            throw SaldoInsuficienteException()
         }
+            saldo-=valor
+
+
 
     }
 
@@ -60,14 +61,13 @@ class contaPoupanca: Conta {
 //            return
 //        }
 
-
-        if(sacarRecurso(valor))
+        if(saldo< valor)
         {
-            contaDestino.depositaRecurso(valor)
-        }else
-        {
-            return
+            throw SaldoInsuficienteException()
         }
+
+            contaDestino.depositaRecurso(valor)
+
     }
 
 }

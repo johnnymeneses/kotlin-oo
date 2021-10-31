@@ -1,7 +1,10 @@
 package modelos
 
+import br.com.johnny.bytebank.exception.SaldoInsuficienteException
+import br.com.johnny.bytebank.exception.ValorInvalidoException
 import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Conta
+import kotlin.reflect.jvm.internal.ReflectProperties
 
 class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(titular, agencia, numeroConta)
 {
@@ -20,58 +23,49 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
     //Implementação de Depósito
     //Não permitir Deposito zerado ou negativo
     override fun depositaRecurso(valor: Double) {
-        if(valor<=0){
-            println("Valor de Depósito Inválido. Operação Cancelada")
-            return
-        } else {
-            this.saldo += valor
+        if(valor<=0) {
+            throw ValorInvalidoException()
         }
+            this.saldo += valor
+
     }
 
-    override fun sacarRecurso(valor: Double) : Boolean {
+    override fun sacarRecurso(valor: Double)  {
 
         //Não permitir saque com valor negativo
-        if(valor<=0){
-            println("Operacao com valor invalido cancelada")
-            return false
+        if(valor<=0) {
+            throw ValorInvalidoException()
         }
 
         val valorComTaxa  = valor+0.1
 
+
         //Não permitir Saque acima do saldo
         if(saldo<valorComTaxa)
         {
-            println("Saldo Insuficiente. Operação cancelada")
-            return false
-        }else {
-            saldo-=valorComTaxa
-            return true
+            throw  SaldoInsuficienteException()
         }
+
+        saldo-=valorComTaxa
+
 
 
     }
 
-    fun sacarRecursoSemTaxa(valor: Double) : Boolean {
+    fun sacarRecursoSemTaxa(valor: Double){
 
         //Não permitir saque com valor negativo
         if(valor<=0){
-            println("Operacao com valor invalido cancelada")
-            return false
+            throw  ValorInvalidoException()
         }
 
         if(saldo<valor){
-            println("Saldo Insuficiente. Operação cancelada")
-            return false
-        }else{
-            saldo-=valor
-            return true
+            throw  SaldoInsuficienteException()
         }
 
+        saldo-=valor
 
-    }
-
-
-
+}
 
 
     //Implementação de Transferência
@@ -81,13 +75,17 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
     override fun transfereRecurso(valor: Double, contaDestino: Conta){
 
 
-        if(sacarRecursoSemTaxa(valor))
-        {
-            contaDestino.depositaRecurso(valor)
-        }else
-        {
-            return
+        //Não permitir saque com valor negativo
+        if(valor<=0){
+            throw  ValorInvalidoException()
         }
+
+        if(saldo<valor){
+            throw  SaldoInsuficienteException()
+        }
+
+         contaDestino.depositaRecurso(valor)
+
     }
 
 }
