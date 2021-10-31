@@ -15,19 +15,20 @@ fun main() {
 
 
         println("Inicio Funcao")
-        for (i in 1..5){
+        for (i in 1..5) {
                 println(i)
+                if (i <= 5) {
+                        println("Terminou")
+                } else {
+                        throw SaldoInsuficienteException()
+                }
+                //val endereco = Any()
+
         }
-        val endereco = Any()
-        throw SaldoInsuficienteException()
-
 }
-
-//Toda Exception devira da classe Throwable
-class SaldoInsuficienteException: Throwable (){
-
-}
-
+//Toda Exception deriva da classe Throwable
+class SaldoInsuficienteException: Throwable ()
+{}
 
 
 
