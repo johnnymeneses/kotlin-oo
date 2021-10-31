@@ -34,9 +34,9 @@ fun testaContaExcpetion() {
 //        Saque Conta 1
         try{
 //            cc.sacarRecurso(-100.0)//Saque Valor Inválido
-            cc.sacarRecursoSemTaxa(-100.0)//Saque Valor Inválido
+//            cc.sacarRecursoSemTaxa(-100.0)//Saque Valor Inválido
 //            cc.sacarRecurso(25000.0) //Saque Valor Insuficiente
-//            cc.sacarRecursoSemTaxa(25000.0) //Saque Valor Insuficiente
+            cc.sacarRecursoSemTaxa(25000.0) //Saque Valor Insuficiente
 //            cc.sacarRecurso(50.0) //Saque OK
 //            cc.sacarRecursoSemTaxa(50.0) //Saque OK
             println("Novo Saldo ${john.nome} R$ ${cc.saldo}")

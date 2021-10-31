@@ -32,18 +32,17 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
     override fun sacarRecurso(valor: Double)  {
 
-        //Não permitir saque com valor negativo
-        if(valor<=0) {
-            throw ValorInvalidoException()
-        }
-
         val valorComTaxa  = valor+0.1
 
+        //Não permitir saque com valor negativo
+        if(valor<=0) {
+            throw  ValorInvalidoException(mensagem = "Valor $valor é invalido ")
+        }
 
         //Não permitir Saque acima do saldo
         if(saldo<valorComTaxa)
         {
-            throw  SaldoInsuficienteException()
+            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
 
         saldo-=valorComTaxa
@@ -62,7 +61,7 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
         }
 
         if(saldo<valor){
-            throw  SaldoInsuficienteException()
+            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
 
         saldo-=valor
