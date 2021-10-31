@@ -1,3 +1,4 @@
+import br.com.johnny.bytebank.exception.SaldoInsuficienteException
 import br.com.johnny.bytebank.modelo.Endereco
 
 
@@ -17,18 +18,17 @@ fun main() {
         println("Inicio Funcao")
         for (i in 1..5) {
                 println(i)
-                if (i <= 5) {
-                        println("Terminou")
+                if (i <= 3) {
+
                 } else {
                         throw SaldoInsuficienteException()
                 }
-                //val endereco = Any()
 
         }
+        println("Terminou")
 }
-//Toda Exception deriva da classe Throwable
-class SaldoInsuficienteException: Throwable ()
-{}
+
+
 
 
 
