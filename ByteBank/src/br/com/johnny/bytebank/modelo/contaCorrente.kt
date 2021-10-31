@@ -83,7 +83,7 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
         if(saldo<valor){
             throw  SaldoInsuficienteException()
         }
-
+        saldo-=valor
          contaDestino.depositaRecurso(valor)
 
     }

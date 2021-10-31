@@ -65,7 +65,7 @@ class contaPoupanca: Conta {
         {
             throw SaldoInsuficienteException()
         }
-
+            saldo-=valor
             contaDestino.depositaRecurso(valor)
 
     }
