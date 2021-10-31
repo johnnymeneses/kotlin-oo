@@ -11,10 +11,20 @@ fun main() {
 //    testaCodigoNovo()
 //    testaCriaContas()
 //    testaTry()
-//      testaAny()
+//    testaAny()
 
 
+        println("Inicio Funcao")
+        for (i in 1..5){
+                println(i)
+        }
+        val endereco = Any()
+        throw SaldoInsuficienteException()
 
+}
+
+//Toda Exception devira da classe Throwable
+class SaldoInsuficienteException: Throwable (){
 
 }
 
