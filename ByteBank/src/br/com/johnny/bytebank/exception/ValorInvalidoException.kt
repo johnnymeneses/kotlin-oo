@@ -1,4 +1,5 @@
 package br.com.johnny.bytebank.exception
 
 //Toda Exception deriva da classe Throwable
-class ValorInvalidoException: Exception ("Valor Inválido")
+class ValorInvalidoException(
+    mensagem:String = "Este valor é invalido.") : Exception (mensagem)

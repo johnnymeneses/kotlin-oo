@@ -54,9 +54,11 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
     fun sacarRecursoSemTaxa(valor: Double){
 
+        var mensagem: String=""
+
         //Não permitir saque com valor negativo
         if(valor<=0){
-            throw  ValorInvalidoException()
+            throw  ValorInvalidoException(mensagem = "Valor $valor é invalido ")
         }
 
         if(saldo<valor){
