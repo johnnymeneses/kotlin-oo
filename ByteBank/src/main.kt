@@ -2,7 +2,7 @@ import br.com.johnny.bytebank.exception.SaldoInsuficienteException
 import br.com.johnny.bytebank.exception.ValorInvalidoException
 import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Endereco
-import br.com.johnny.bytebank.teste.testaContaExcpetion
+import br.com.johnny.bytebank.teste.testaContaExcpetionCP
 import modelos.contaCorrente
 
 
@@ -18,7 +18,8 @@ fun main() {
 //    testaTry()
 //    testaAny()
 //    testaException()
-    testaContaExcpetion()
+//    testaContaExcpetionCC()
+    testaContaExcpetionCP()
 }
 
 

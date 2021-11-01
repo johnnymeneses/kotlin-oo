@@ -1,6 +1,7 @@
 package modelos
 
 import br.com.johnny.bytebank.exception.SaldoInsuficienteException
+import br.com.johnny.bytebank.exception.ValorInvalidoException
 import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Conta
 
@@ -21,13 +22,11 @@ class contaPoupanca: Conta {
 
         //Não permitir saque com valor negativo
         if(valor<=0){
-            println("Operacao com valor invalido cancelada")
-            throw SaldoInsuficienteException()
+            throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
         }
 
         if(saldo<valor){
-            println("Saldo Insuficiente. Operação cancelada")
-            throw SaldoInsuficienteException()
+            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
             saldo-=valor
 
@@ -36,18 +35,16 @@ class contaPoupanca: Conta {
     }
 
 
-
     //Implementação de Depósito
     //Não permitir Deposito zerado ou negativo
     override fun depositaRecurso(valor: Double) {
        if(valor<=0)
        {
-           println("Valor de Depósito Inválido. Operação Cancelada")
-           return
+           throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
        }
-        else {
-           this.saldo += valor
-       }
+
+        this.saldo += valor
+
     }
 
 
@@ -61,12 +58,16 @@ class contaPoupanca: Conta {
 //            return
 //        }
 
+        if(valor<=0){
+            throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
+        }
+
         if(saldo< valor)
         {
-            throw SaldoInsuficienteException()
+            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
-            saldo-=valor
-            contaDestino.depositaRecurso(valor)
+        saldo-=valor
+        contaDestino.depositaRecurso(valor)
 
     }
 

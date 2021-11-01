@@ -57,11 +57,11 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
         //Não permitir saque com valor negativo
         if(valor<=0){
-            throw  ValorInvalidoException(mensagem = "Valor $valor é invalido ")
+            throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
         }
 
         if(saldo<valor){
-            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
+            throw  SaldoInsuficienteException(mensagem = "Saldo R$$saldo insuficiente para o saque de R$ $valor")
         }
 
         saldo-=valor
