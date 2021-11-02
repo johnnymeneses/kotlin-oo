@@ -22,8 +22,11 @@ val cp2 = contaPoupanca(maria, 4444, 6565)
 
 fun testaContaException(){
 
-        depositaCC()
+//        depositaCC()
 //        depositaCP()
+//        saqueCC()
+        saqueCCsemTaxa()
+//        saqueCP()
 }
 
 fun depositaCC(){
@@ -40,11 +43,12 @@ fun depositaCC(){
         }
 }
 
+//println("Saldo atual ${john.nome} R$ ${X.saldo}")
 
 fun depositaCP(){
         try {
                 println("Saldo atual ${john.nome} R$ ${cp.saldo}")
-                cp.depositaRecurso(-500.0) //Valor Inválido
+//                cp.depositaRecurso(-500.0) //Valor Inválido
                 cp.depositaRecurso(500.0) //Valor OK
                 println("Novo Saldo ${john.nome} R$ ${cp.saldo}")
         }catch(e: ValorInvalidoException)
@@ -56,11 +60,63 @@ fun depositaCP(){
 
 fun saqueCC(){
 
+        try{
+                println("Saldo atual ${john.nome} R$ ${cc.saldo}")
+//                cc.sacarRecurso(-100.0)//Saque Valor Inválido
+//                cc.sacarRecurso(25000.0) //Saque Valor Insuficiente
+                cc.sacarRecurso(50.0) //Saque OK
+                println("Novo Saldo ${john.nome} R$ ${cc.saldo}")
+        }catch(e: ValorInvalidoException)
+        {
+                println("Caiu na Expection de Valor inválido")
+                e.printStackTrace()
+        }catch(e: SaldoInsuficienteException)
+        {
+                println("Caiu na Expection de Saldo Insuficiente")
+                e.printStackTrace()
+        }
+}
+
+fun saqueCCsemTaxa(){
+        try{
+                println("Saldo atual ${john.nome} R$ ${cc.saldo}")
+                cc.sacarRecursoSemTaxa(-100.0)//Saque Valor Inválido
+//                cc.sacarRecursoSemTaxa(25000.0) //Saque Valor Insuficiente
+//                cc.sacarRecursoSemTaxa(50.0) //Saque OK
+                println("Novo Saldo ${john.nome} R$ ${cc.saldo}")
+        }catch(e: ValorInvalidoException)
+        {
+                println("Caiu na Expection de Valor inválido")
+                e.printStackTrace()
+        }catch(e: SaldoInsuficienteException)
+        {
+                println("Caiu na Expection de Saldo Insuficiente")
+                e.printStackTrace()
+        }
+
 }
 
 fun saqueCP(){
-
+        try{
+                println("Saldo atual ${john.nome} R$ ${cp.saldo}")
+                cp.sacarRecurso(-100.0)//Saque Valor Inválido
+                cp.sacarRecurso(25000.0) //Saque Valor Insuficiente
+                cp.sacarRecurso(50.0) //Saque OK
+                println("Novo Saldo ${john.nome} R$ ${cp.saldo}")
+        }catch(e: ValorInvalidoException)
+        {
+                println("Caiu na Expection de Valor inválido")
+                e.printStackTrace()
+        }catch(e: SaldoInsuficienteException)
+        {
+                println("Caiu na Expection de Saldo Insuficiente")
+                e.printStackTrace()
+        }
 }
+
+
+
+
 
 fun transferencia(){
 
@@ -85,24 +141,7 @@ fun testaContaExcpetionCC() {
 
 //        Saque Conta 1
 /*
-        try{
 
-            cc.sacarRecurso(-100.0)//Saque Valor Inválido
-            cc.sacarRecursoSemTaxa(-100.0)//Saque Valor Inválido
-            cc.sacarRecurso(25000.0) //Saque Valor Insuficiente
-             cc.sacarRecursoSemTaxa(25000.0) //Saque Valor Insuficiente
-            cc.sacarRecurso(50.0) //Saque OK
-            cc.sacarRecursoSemTaxa(50.0) //Saque OK
-            println("Novo Saldo ${john.nome} R$ ${cc.saldo}")
-        }catch(e: ValorInvalidoException)
-        {
-            println("Caiu na Expection de Valor inválido")
-            e.printStackTrace()
-        }catch(e: SaldoInsuficienteException)
-        {
-            println("Caiu na Expection de Saldo Insuficiente")
-            e.printStackTrace()
-        }
 */
 
 
