@@ -43,10 +43,11 @@ fun depositaCC(){
         {
                 println("Valor inválido")
                 e.printStackTrace()
+        }catch (e: Exception){
+                println("erro desconhecido")
+                e.printStackTrace()
         }
 }
-
-
 
 fun depositaCP(){
         try {
@@ -116,7 +117,6 @@ fun saqueCP(){
                 e.printStackTrace()
         }
 }
-
 
 fun transferenciaCC(){
         try {
