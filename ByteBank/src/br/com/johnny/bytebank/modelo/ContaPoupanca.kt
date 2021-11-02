@@ -13,6 +13,10 @@ class contaPoupanca: Conta {
 //     totalContasCriadas
  }
 
+    init {
+//        contaCorrente.total++
+//        println("Criando conta poupança")
+    }
 
 
     //Implementação de Saque
@@ -22,11 +26,11 @@ class contaPoupanca: Conta {
 
         //Não permitir saque com valor negativo
         if(valor<=0){
-            throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
+            throw  ValorInvalidoException(mensagem = "CP - R$$valor é um invalido. Operação cancelada")
         }
 
         if(saldo<valor){
-            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
+            throw  SaldoInsuficienteException(mensagem = "CP - Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
             saldo-=valor
 
@@ -40,7 +44,7 @@ class contaPoupanca: Conta {
     override fun depositaRecurso(valor: Double) {
        if(valor<=0)
        {
-           throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
+           throw  ValorInvalidoException(mensagem = "CP - R$$valor é um invalido. Operação cancelada")
        }
 
         this.saldo += valor
@@ -59,12 +63,12 @@ class contaPoupanca: Conta {
 //        }
 
         if(valor<=0){
-            throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
+            throw  ValorInvalidoException(mensagem = "CP - R$$valor é um invalido. Operação cancelada")
         }
 
         if(saldo< valor)
         {
-            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
+            throw  SaldoInsuficienteException(mensagem = "CP - Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
         saldo-=valor
         contaDestino.depositaRecurso(valor)

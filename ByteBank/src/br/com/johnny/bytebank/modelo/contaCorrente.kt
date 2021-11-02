@@ -17,14 +17,14 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
     init {
         total++
-        println("Criando contas correntes")
+//        println("Criando contas correntes")
     }
 
     //Implementação de Depósito
     //Não permitir Deposito zerado ou negativo
     override fun depositaRecurso(valor: Double) {
         if(valor<=0) {
-            throw ValorInvalidoException()
+            throw  ValorInvalidoException(mensagem = "CC - Valor $valor é invalido ")
         }
             this.saldo += valor
 
@@ -36,13 +36,13 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
         //Não permitir saque com valor negativo
         if(valor<=0) {
-            throw  ValorInvalidoException(mensagem = "Valor $valor é invalido ")
+            throw  ValorInvalidoException(mensagem = "CC - Valor $valor é invalido ")
         }
 
         //Não permitir Saque acima do saldo
         if(saldo<valorComTaxa)
         {
-            throw  SaldoInsuficienteException(mensagem = "Saldo R$ $saldo insuficiente para o saque de R$ $valor")
+            throw  SaldoInsuficienteException(mensagem = "CC - Saldo R$ $saldo insuficiente para o saque de R$ $valor")
         }
 
         saldo-=valorComTaxa
@@ -53,15 +53,13 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
     fun sacarRecursoSemTaxa(valor: Double){
 
-        var mensagem: String=""
-
         //Não permitir saque com valor negativo
         if(valor<=0){
-            throw  ValorInvalidoException(mensagem = "R$$valor é um invalido. Operação cancelada")
+            throw  ValorInvalidoException(mensagem = "CC - R$$valor é um invalido. Operação cancelada")
         }
 
         if(saldo<valor){
-            throw  SaldoInsuficienteException(mensagem = "Saldo R$$saldo insuficiente para o saque de R$ $valor")
+            throw  SaldoInsuficienteException(mensagem = "CC - Saldo R$$saldo insuficiente para o saque de R$ $valor")
         }
 
         saldo-=valor
@@ -78,11 +76,11 @@ class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(ti
 
         //Não permitir saque com valor negativo
         if(valor<=0){
-            throw  ValorInvalidoException()
+            throw  ValorInvalidoException(mensagem = "CC - R$$valor é um invalido. Operação cancelada")
         }
 
         if(saldo<valor){
-            throw  SaldoInsuficienteException()
+            throw  SaldoInsuficienteException(mensagem = "CC - Saldo R$$saldo insuficiente para o saque de R$ $valor")
         }
         saldo-=valor
          contaDestino.depositaRecurso(valor)

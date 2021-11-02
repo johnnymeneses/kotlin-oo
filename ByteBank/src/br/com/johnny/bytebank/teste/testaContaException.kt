@@ -4,33 +4,84 @@ import br.com.johnny.bytebank.exception.SaldoInsuficienteException
 import br.com.johnny.bytebank.exception.ValorInvalidoException
 import br.com.johnny.bytebank.modelo.Cliente
 import modelos.contaCorrente
+import modelos.contaPoupanca
 
+
+//Cliente 1
+val john = Cliente("johnn", "1234578", 12345)
+//Contas
+val cc = contaCorrente(john, 1234, 4444)
+val cp = contaPoupanca(john, 4565, 5656)
+
+
+//Cliente 2
+val maria = Cliente("Maria", "1234578", 12345)
+val cc2 = contaCorrente(maria, 1234, 4444)
+val cp2 = contaPoupanca(maria, 4444, 6565)
+
+
+fun testaContaException(){
+
+        depositaCC()
+//        depositaCP()
+}
+
+fun depositaCC(){
+
+        try {
+                println("Saldo atual ${john.nome} R$ ${cc.saldo}")
+                cc.depositaRecurso(-500.0) //Valor Inválido
+//                cc.depositaRecurso(500.0) //Valor OK
+                println("Novo Saldo ${john.nome} R$ ${cc.saldo}")
+        }catch(e: ValorInvalidoException)
+        {
+                println("Valor inválido")
+                e.printStackTrace()
+        }
+}
+
+
+fun depositaCP(){
+        try {
+                println("Saldo atual ${john.nome} R$ ${cp.saldo}")
+                cp.depositaRecurso(-500.0) //Valor Inválido
+                cp.depositaRecurso(500.0) //Valor OK
+                println("Novo Saldo ${john.nome} R$ ${cp.saldo}")
+        }catch(e: ValorInvalidoException)
+        {
+                println("Valor inválido")
+                e.printStackTrace()
+        }
+}
+
+fun saqueCC(){
+
+}
+
+fun saqueCP(){
+
+}
+
+fun transferencia(){
+
+}
+
+
+
+
+
+
+/*
 fun testaContaExcpetionCC() {
 
-//Cria Conta 1
-        val john = Cliente("johnn", "1234578", 12345)
-        val cc = contaCorrente(john, 1234, 4444)
 
-//Cria Conta 2
-        val maria = Cliente("Maria", "1234578", 12345)
-        val cc2 = contaCorrente(maria, 1234, 4444)
 
-//Imprime Saldo
-//        println("Saldo atual ${john.nome} R$ ${cc.saldo}")
-//        println("Saldo atual ${maria.nome} R$ ${cc2.saldo}")
+
 
 
 //       Deposito Conta
-/*        try {
-            cc.depositaRecurso(-500.0) //Valor Inválido
-              cc.depositaRecurso(500.0)
-            println("Novo Saldo ${john.nome} R$ ${cc.saldo}")
-        }catch(e: ValorInvalidoException)
-        {
-            println("Valor inválido")
-            e.printStackTrace()
-        }
-*/
+
+
 
 //        Saque Conta 1
 /*
@@ -78,17 +129,11 @@ fun testaContaExcpetionCC() {
 
 fun testaContaExcpetionCP() {
 
-//Cria Conta 1
-        val john = Cliente("johnn", "1234578", 12345)
-        val cp = contaCorrente(john, 1234, 4444)
 
-//Cria Conta 2
-        val maria = Cliente("Maria", "1234578", 12345)
-        val cp1 = contaCorrente(maria, 1234, 4444)
 
 //Imprime Saldo
         println("Saldo atual ${john.nome} R$ ${cp.saldo}")
-//        println("Saldo atual ${maria.nome} R$ ${cp1.saldo}")
+        println("Saldo atual ${maria.nome} R$ ${cp1.saldo}")
 
 
 //       Deposito Conta
@@ -141,4 +186,6 @@ fun testaContaExcpetionCP() {
         }
 
 
-}
+*/
+
+

@@ -19,7 +19,7 @@ abstract class Conta (val titular: Cliente, val agencia: Int, val numeroConta: I
 //    protected set
 
 init{
-    println("Criando Contas")
+//    println("Criando Contas")
     total++
 }
     abstract fun depositaRecurso(valor: Double)
