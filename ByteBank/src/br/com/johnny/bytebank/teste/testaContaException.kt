@@ -27,7 +27,9 @@ fun testaContaException(){
 //        saqueCC()
 //        saqueCCsemTaxa()
 //        saqueCP()
-        transferenciaCC()
+//        transferenciaCC()
+//        transferenciaCP()
+        transferenciaCPCC()
 }
 
 fun depositaCC(){
@@ -139,5 +141,55 @@ fun transferenciaCC(){
 
 }
 
+fun transferenciaCP(){
+        try {
+                println("Saldo atual ${john.nome} R$ ${cp.saldo}")
+                println("Saldo atual ${maria.nome} R$ ${cp2.saldo}")
 
+//                cp.transfereRecurso(-50.0, cp2) //Transferencia Invalida
+                cp.transfereRecurso(5000.0, cp2) //Tranferencia Insuficiente
+//                cp.transfereRecurso(50.0, cp2)//Transferencia OK
+
+                println()
+                println("Novo Saldo ${john.nome} R$ ${cp.saldo}")
+                println("Novo Saldo ${maria.nome} R$ ${cp2.saldo}")
+        } catch (e: ValorInvalidoException) {
+                println("Caiu na Expection de Valor inválido")
+                e.printStackTrace()
+
+        } catch (e: SaldoInsuficienteException) {
+                println("Caiu na Expection de Saldo Insuficiente")
+                e.printStackTrace()
+        }
+
+}
+
+
+fun transferenciaCPCC(){
+        try {
+                println("Saldo atual Conta Corrente ${john.nome} R$ ${cc.saldo}")
+                println("Saldo atual Conta Poupança ${john.nome} R$ ${cp.saldo}")
+
+//                cc.transfereRecurso(-50.0, cp) //Transferencia Invalida CC
+                cp.transfereRecurso(-50.0, cc) //Transferencia Invalida CP
+
+//                cc.transfereRecurso(5000.0, cp) //Tranferencia Insuficiente CC
+//                cp.transfereRecurso(5000.0, cc) //Tranferencia Insuficiente CP
+
+//                cc.transfereRecurso(50.0, cp)//Transferencia OK CC
+//                cp.transfereRecurso(50.0, cc)//Transferencia OK CP
+
+                println()
+                println("Novo saldo Conta Corrente ${john.nome} R$ ${cc.saldo}")
+                println("Novo saldo Conta Poupança ${john.nome} R$ ${cp.saldo}")
+        } catch (e: ValorInvalidoException) {
+                println("Caiu na Expection de Valor inválido")
+                e.printStackTrace()
+
+        } catch (e: SaldoInsuficienteException) {
+                println("Caiu na Expection de Saldo Insuficiente")
+                e.printStackTrace()
+        }
+
+}
 
