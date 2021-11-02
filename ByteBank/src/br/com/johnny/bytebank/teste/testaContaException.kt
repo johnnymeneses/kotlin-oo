@@ -171,13 +171,13 @@ fun transferenciaCPCC(){
                 println("Saldo atual Conta Poupança ${john.nome} R$ ${cp.saldo}")
 
 //                cc.transfereRecurso(-50.0, cp) //Transferencia Invalida CC
-                cp.transfereRecurso(-50.0, cc) //Transferencia Invalida CP
+//                cp.transfereRecurso(-50.0, cc) //Transferencia Invalida CP
 
 //                cc.transfereRecurso(5000.0, cp) //Tranferencia Insuficiente CC
 //                cp.transfereRecurso(5000.0, cc) //Tranferencia Insuficiente CP
 
-//                cc.transfereRecurso(50.0, cp)//Transferencia OK CC
-//                cp.transfereRecurso(50.0, cc)//Transferencia OK CP
+                cc.transfereRecurso(50.0, cp)//Transferencia OK CC
+                cp.transfereRecurso(50.0, cc)//Transferencia OK CP
 
                 println()
                 println("Novo saldo Conta Corrente ${john.nome} R$ ${cc.saldo}")
