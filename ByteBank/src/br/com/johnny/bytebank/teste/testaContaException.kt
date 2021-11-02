@@ -25,8 +25,8 @@ fun testaContaException(){
 //        depositaCC()
 //        depositaCP()
 //        saqueCC()
-        saqueCCsemTaxa()
-//        saqueCP()
+//        saqueCCsemTaxa()
+        saqueCP()
 }
 
 fun depositaCC(){
@@ -80,9 +80,9 @@ fun saqueCC(){
 fun saqueCCsemTaxa(){
         try{
                 println("Saldo atual ${john.nome} R$ ${cc.saldo}")
-                cc.sacarRecursoSemTaxa(-100.0)//Saque Valor Inválido
+//                cc.sacarRecursoSemTaxa(-100.0)//Saque Valor Inválido
 //                cc.sacarRecursoSemTaxa(25000.0) //Saque Valor Insuficiente
-//                cc.sacarRecursoSemTaxa(50.0) //Saque OK
+                cc.sacarRecursoSemTaxa(50.0) //Saque OK
                 println("Novo Saldo ${john.nome} R$ ${cc.saldo}")
         }catch(e: ValorInvalidoException)
         {
@@ -100,8 +100,8 @@ fun saqueCP(){
         try{
                 println("Saldo atual ${john.nome} R$ ${cp.saldo}")
                 cp.sacarRecurso(-100.0)//Saque Valor Inválido
-                cp.sacarRecurso(25000.0) //Saque Valor Insuficiente
-                cp.sacarRecurso(50.0) //Saque OK
+//                cp.sacarRecurso(25000.0) //Saque Valor Insuficiente
+//                cp.sacarRecurso(50.0) //Saque OK
                 println("Novo Saldo ${john.nome} R$ ${cp.saldo}")
         }catch(e: ValorInvalidoException)
         {
