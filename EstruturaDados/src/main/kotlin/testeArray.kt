@@ -21,7 +21,7 @@ fun testeArray(){
     println("Array normal - Maior idade $maiorIdade")
 
 
-    val idadesDinamico = intArrayOf(25,35,45,15,55,70,81)//Array com tamanhho dinâmico
+    val idadesDinamico = intArrayOf(25,35,45,12,55,70,81)//Array com tamanhho dinâmico
 
     //Percorrendo o array
     var maiorIdadeD=0
@@ -35,6 +35,18 @@ fun testeArray(){
     }
 
     println("Array Dinâmico - Maior idade $maiorIdadeD")
+
+
+    //Versão com forEach
+
+    var menorIdade= Int.MAX_VALUE //Garante o maior valor possível do inteiro (melhor que ficar colocando 99)
+
+    idadesDinamico.forEach {  idadesDinamico ->
+        if(idadesDinamico < menorIdade){
+            menorIdade = idadesDinamico
+        }
+    }
+    println("Menor idade no forEach $menorIdade ")
 
 
 }
