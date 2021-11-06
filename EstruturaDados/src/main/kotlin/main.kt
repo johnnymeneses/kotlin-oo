@@ -2,8 +2,8 @@
         println("Estrutura de Dados")
 
 //       testeArray()
-        arrayFuncionarios()
-
+//        arrayFuncionarios()
+    range()
 
         /*
         *
