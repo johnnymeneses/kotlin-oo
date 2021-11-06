@@ -28,7 +28,7 @@ fun arrayFuncionarios(){
     println("Maior Salario $maiorSalario")
 
 
-    //Aumento de Salario
+    //Aumento de Salario - Versão For
     val aumentoSalario = 1.1
 
     for (indice in salarios.indices){
@@ -36,4 +36,9 @@ fun arrayFuncionarios(){
     }
     println(salarios.contentToString())
 
+    //Aumento de Salario - Versão ForEachIndexed (função que recebe como parâmetro outra função)
+    salarios.forEachIndexed { i, bonus ->
+        salarios[i] = bonus * aumentoSalario
+    }
+    println(salarios.contentToString())
 }
