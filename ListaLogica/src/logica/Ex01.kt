@@ -12,8 +12,6 @@ class Ex01{
             println("$index * $num = " + index * num)
         }
     }
-
-
 //tabuada(10)
 
 
