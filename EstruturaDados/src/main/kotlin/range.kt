@@ -85,17 +85,28 @@ fun Ex6 (){
 
 
     //Toodos são maiores de idade ?
-    val todosMaiores = idades.all {it >= 18}
+    val todosMaiores = idades.all {it >= 18} //all retorna quando todos satisfazem a condição
 
 //    Alguem maior de idade
-    val alguemMaior = idades.any {it >=18}
+    val alguemMaior = idades.any {it >=18} //any retorna quando pelo menos um satifaz a condição
 
+    //Filtrar somente quem é maior de idade
+    val soMaiores = idades.filter { it >=18 }
+
+    //Filtrar somente quem é menor de idade
+    val soMenores = idades.filter { it <18 }
+
+    //Procura alguem com valor especifico
+    val valorEspecifico = idades.find { it==18 } //traz o primeiro valor que satisfaça
 
     println("Menor idade :$menorIdade")
     println("Maior idade :$maiorIdade")
     println("Idade media :$idadeMedia")
     println("Todos maiores de idade? :$todosMaiores")
     println("Alguem maior de idade? :$alguemMaior")
+    println("Lista de Maiores :$soMaiores")
+    println("Lista de Menores :$soMenores")
+    println("Alguem especifico? :$valorEspecifico")
 
 }
 

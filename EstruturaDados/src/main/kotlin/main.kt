@@ -3,8 +3,9 @@
 
 //       testeArray()
 //        arrayFuncionarios()
-    range()
+//    range()
 
+        SalarioBigDecimal()
         /*
         *
         * Maior
@@ -12,6 +13,10 @@
         * Maior Impar
         * Menor Impar
         * Aumento no Maior
+        * Tem?
+        * Não tem?
+        * Tem algum?
+        *
         * Aumento no Menor
         *
         * */
