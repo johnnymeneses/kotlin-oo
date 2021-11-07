@@ -1,7 +1,7 @@
 
 fun range() {
     println("Range")
-    Ex3()
+    Ex6()
 
 }
 fun Ex1(){
@@ -26,7 +26,6 @@ fun Ex2(){
 fun Ex3() {
 //    range dos numeros pares, exceto o ultimo
 
-
     val numerosPares2 = 0.until(50) step 2
     for (par in numerosPares2) {
         print(" $par : ")
@@ -35,22 +34,15 @@ fun Ex3() {
 
 
 
-fun Ex4(){}
-fun Ex5(){}
-fun Ex6(){
-
-
-
-
-
+fun Ex4(){
     //Numeros pares reverso
     println("")
     val numerosParesReverso = 50 downTo 0 step 2
     numerosParesReverso.forEach {print(" $it :")}
+}
 
-    println("")
-    println("")
 
+fun Ex5(){
 
     //Encontrando valores dentro de um range
     val intervalo = 100.0..500.0
@@ -63,19 +55,24 @@ fun Ex6(){
         println("Salario não encontrado")
     }
 
-    println("")
-    println("")
+
+    //Encontrando letras
     val alfabeto = 'a'..'z' //Letras minusculas
-//val letra = 'k'
+    //val letra = 'k'
     val letra = 'K'
     if(letra in alfabeto){
         println("Letra encontrada")
     }else{
         println("Letra não encontrada")
     }
-
 }
 
+
+
+
+fun Ex6 (){
+
+}
 
 
 
