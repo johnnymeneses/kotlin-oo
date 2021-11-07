@@ -12,9 +12,22 @@ fun SalarioBigDecimal() {
 
     salarios[0] = "1500.55".toBigDecimal() //Usar string para evitar arredondamento. Depois converter pra BigDecimal
     salarios[1] = "2500.25".toBigDecimal()
+    //É preciso converter cada item para o BigDecimal.
 
     println(salarios.contentToString())
 
 
+    //Usando a função que converte pra BigDecimal de forma dinâmica
+    val salariosDinamico = bigDecimalArrayOf("3500.0","2500.0")
+    println(salariosDinamico.contentToString())
+
+}
+
+//Criando o Array de Forma Dinâmica
+//vararg: parãmetro variável (tipo especial do kotlin que vc consegue passar arumentos variaveis)
+fun bigDecimalArrayOf(vararg valores: String): Array<BigDecimal>{
+    return Array<BigDecimal>(valores.size) {i ->
+        valores[i].toBigDecimal() //Pegando cada valor desse elemnto, acessando pelo indice i e convertendo pra BigDecimal
+    }
 
 }
