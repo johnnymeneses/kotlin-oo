@@ -71,6 +71,31 @@ fun Ex5(){
 
 
 fun Ex6 (){
+    val idades: IntArray = intArrayOf(18, 12, 29, 35, 64, 78)
+
+    //println(idades.contentToString())
+    //Encontrando valor maximo
+    val maiorIdade = idades.maxOrNull()
+
+    //Encontrando valor mínimo
+    val menorIdade = idades.minOrNull()
+
+    //idade Media
+    val idadeMedia = idades.average()
+
+
+    //Toodos são maiores de idade ?
+    val todosMaiores = idades.all {it >= 18}
+
+//    Alguem maior de idade
+    val alguemMaior = idades.any {it >=18}
+
+
+    println("Menor idade :$menorIdade")
+    println("Maior idade :$maiorIdade")
+    println("Idade media :$idadeMedia")
+    println("Todos maiores de idade? :$todosMaiores")
+    println("Alguem maior de idade? :$alguemMaior")
 
 }
 
