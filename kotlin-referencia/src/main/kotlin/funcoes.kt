@@ -9,6 +9,14 @@ fun funcoes(){
 }
 
 
+// Hello World
+fun printNome(nome: String){
+    println("Ola $nome")
+}
+
+
+
+
 //Função com retorno direto
 fun areaTerreno(a: Int, b: Int): Int = a*b
 
