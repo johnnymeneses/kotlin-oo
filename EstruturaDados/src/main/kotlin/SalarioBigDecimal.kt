@@ -5,6 +5,13 @@ fun SalarioBigDecimal() {
 
     println("Salario Big Decimal")
 
+//    Quanto que os funcionarios ganham hoje?
+
+//    Quanto ele vai gastar no proximo mês
+
+//    Quanto ele vai gastar em 6 meses
+
+
 
     regraNegocio()
 
@@ -23,7 +30,7 @@ fun bigDecimalArrayOf(vararg valores: String): Array<BigDecimal>{
 }
 
 fun exemploEstatico (){
-    //    Array com tipo genérico. Para fazer Array do tipo BigDecima, precisa usar essa estratégia
+    //    Array com tipo genérico. Para fazer Array do tipo BigDecimal, precisa usar essa estratégia
 
     val salarios = Array<BigDecimal> (5) { BigDecimal.ONE } //Constante para inializar o Array em Zero
 
@@ -46,14 +53,14 @@ fun exemploDinamico(){
 
 fun regraNegocio(){
     //To.do funcionŕio deve ter um auvmento de 10%. Se o aumento for menor que R$500,00.. cravar o valor em R$ 500,00
-    val salarioEmpresa = bigDecimalArrayOf("3000.0","4000.0","5000.0","6000.0","7000.0")
+    val salarios = bigDecimalArrayOf("3000.0","4000.0","5000.0","6000.0","7000.0")
 
     //Aumento de 10%
     //Aumento de R$ 500,003
     //Somente dois valores depois da virgula e arrendondar pra cima
 
     val aumento = "1.1".toBigDecimal() //Aumento de 10%
-    val salarioAumento: Array<BigDecimal> = salarioEmpresa
+    val salarioComAumento: Array<BigDecimal> = salarios
 //        .map {salarioEmpresa -> (salarioEmpresa * aumento).setScale(2,RoundingMode.UP)} Opção para tudo
         .map { salarioEmpresa ->
             calculaAumentoRelativo(salarioEmpresa, aumento)
@@ -61,22 +68,47 @@ fun regraNegocio(){
         .toTypedArray()
 
 
-    println(salarioEmpresa.contentToString())
-    println(salarioAumento.contentToString())
 
 
 
 
+
+    //Fold (Somatoria)
+    //Calculo dos Gastor de todos os salários de 6 meses
+//    val meses = 6.toBigDecimal()
+//    salarioComAumento.fold()
+
+
+
+    println("Salario Atual")
+    println(salarios.contentToString())
+
+    println("Somatorio de gastos atuais:")
+    println(salarios.somatoria())
+
+    println("")
+    println("Salario com Aumento")
+    println(salarioComAumento.contentToString())
+
+    println("Somatoria de Salarios com Aumento") //Gastos do primeiro mês de salario com aumento
+    val gastoInicial = salarioComAumento.somatoria()
+    println(gastoInicial)
 
 
 
 }
 
-private fun calculaAumentoRelativo(
-    salarioEmpresa: BigDecimal,
-    aumento: BigDecimal
-) = if (salarioEmpresa < "5000.0".toBigDecimal()) {
-    salarioEmpresa + "500.0".toBigDecimal()
-} else {
-    (salarioEmpresa * aumento).setScale(2, RoundingMode.UP)
+private fun calculaAumentoRelativo(salarioEmpresa: BigDecimal,aumento: BigDecimal)
+        = if (salarioEmpresa < "5000.0".toBigDecimal()) {
+            salarioEmpresa + "500.0".toBigDecimal()
+            } else {
+        (salarioEmpresa * aumento).setScale(2, RoundingMode.UP)
+        }
+
+
+//Extencion Funcion Array  - Somatoria
+fun Array<BigDecimal>.somatoria(): BigDecimal{ //reduce: reduce to.do os valores do array à um valor só
+    return this.reduce {acumulador, valor ->//o valor é o elemento do array que estamos iterando | o acumulador é a soma de cada iteração
+        acumulador + valor
+    }
 }
