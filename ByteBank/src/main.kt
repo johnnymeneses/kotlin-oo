@@ -12,7 +12,7 @@ fun main() {
 
 //    testaFuncionarios()
 //    testaAutenticacao()
-//        testaContas()
+//    testaContas()
 //    testaEndereco()
 //    testaCodigoNovo()
 //    testaCriaContas()
@@ -20,7 +20,7 @@ fun main() {
 //    testaAny()
 //    testaException()
 //    testaContaExcpetionCC()
-//    testaContaException()
+    testaContaException()
     testaNull()
 }
 

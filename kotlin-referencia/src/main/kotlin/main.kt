@@ -1,13 +1,17 @@
 fun main(){
 
-//    variaveis()             // Topico sobre variáveis
-//    controleFLuxo()         //Estrutura de Repetição
-//    estruturaCondicional()  //Estrutura Condicional
-//    funcoes()               //Estrutura de Funções
+    variaveis()             // Topico sobre variáveis
+    controleFLuxo()         //Estrutura de Repetição
+    estruturaCondicional()  //Estrutura Condicional
+    funcoes()               //Estrutura de Funções
 
 
     //Orientação a objetos
     testaClasse()
+    testaHeranca()
+
+    //Kotlin
+    testaAny()
 
 
 
