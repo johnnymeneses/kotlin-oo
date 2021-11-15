@@ -94,7 +94,56 @@ fun regraNegocio(){
     val gastoInicial = salarioComAumento.somatoria()
     println(gastoInicial)
 
+    println("Somatoria de Salarios com Aumento por 6 meses") //Gastos do primeiro mês de salario com aumento
+    val meses = 6.toBigDecimal()
+    //Calculo de somatória com Fold. O fold exige um valor inicial
+    val gastoTotal = salarioComAumento.fold(gastoInicial){acumulador, salario->
+        acumulador + (salario * meses).setScale(2,RoundingMode.UP)
+    }
+    println(gastoTotal)
 
+
+    //Qual é a media dos três maiores salários?
+
+
+    //Identificar os três maiores salarios
+    //> Ordenando do menor pro maior:
+
+    val salariosOrdenados = salarioComAumento.sorted() //Função do Kotlin que ordena do menor parao maior
+
+    println("Ordenação menor pro maior: $salariosOrdenados")
+    //Pegar os três primeiros da lista
+    println("3 primeiros ${salariosOrdenados.take(3)}")
+    //pegar os três ultimos
+    println("3 ultimos ${salariosOrdenados.takeLast(3)}")
+
+
+
+    //Media dos três maiores salários
+    // > extension function
+    fun Array<BigDecimal>.media(): BigDecimal {
+        return if(this.isEmpty()){
+            BigDecimal.ZERO
+        }else{
+            this.somatoria() / this.size.toBigDecimal()
+        }
+    }
+
+
+    //Take last não devolve um array. Transformar em Array BigDecimal
+    var tresUltimosSalarios: Array<BigDecimal> = salariosOrdenados.takeLast(3).toTypedArray()
+
+    val mediaSalario = tresUltimosSalarios.media()
+
+    //Opção 2
+    val media = salariosOrdenados
+        .sorted() //ordena do menor pro maior
+        .takeLast(3) // pega os três ultimos
+        .toTypedArray() //converte em array
+        .media() //chama a function de media
+
+    println("Media dos três maiores salarios $mediaSalario")
+    println("Media dos três maiores salarios $media")
 
 }
 
