@@ -136,14 +136,22 @@ fun regraNegocio(){
     val mediaSalario = tresUltimosSalarios.media()
 
     //Opção 2
-    val media = salariosOrdenados
+    val mediaMaior = salariosOrdenados
         .sorted() //ordena do menor pro maior
         .takeLast(3) // pega os três ultimos
         .toTypedArray() //converte em array
         .media() //chama a function de media
 
+
+    val mediaMenor = salariosOrdenados
+        .sorted() //ordena do menor pro maior
+        .take(3) // pega os três ultimos
+        .toTypedArray() //converte em array
+        .media() //chama a function de media
+
     println("Media dos três maiores salarios $mediaSalario")
-    println("Media dos três maiores salarios $media")
+    println("Media dos três maiores salarios $mediaMaior")
+    println("Media dos três menores salarios $mediaMenor")
 
 }
 
