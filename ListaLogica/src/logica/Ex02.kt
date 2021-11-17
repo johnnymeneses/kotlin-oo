@@ -4,10 +4,8 @@ package logica
     O cálculo da área neste caso é bem simples, basta multiplicar lado x comprimento para retângulos
 * */
 
+//   fun areaTerreno(a: Int, b: Int): Int = a*b
 
-class Ex02{
-
-    fun areaTerreno(a: Int, b: Int): Int = a*b
-
-
+fun areaTerreno(lado: Int, comprimento:Int){
+   println("A área é ${lado * comprimento}")
 }

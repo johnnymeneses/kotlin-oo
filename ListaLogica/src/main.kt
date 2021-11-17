@@ -4,7 +4,8 @@ fun main() {
 
         println("Lista Lógica")
 
-        ex01(10)
+//        ex01(10)
+        ex02(5,10)
 
 
 
@@ -15,7 +16,10 @@ fun ex01(num: Int){
         tabuada(num)
 }
 
-
+fun ex02(lado: Int, comprimento: Int)
+{
+        areaTerreno(lado,comprimento)
+}
 //      logica.Ex02 - Área do terreno
 //      val terreno = logica.Ex02()
 //      println(terreno.areaTerreno(5,4))
