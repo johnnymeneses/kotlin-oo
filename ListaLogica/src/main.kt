@@ -1,18 +1,20 @@
 package logica
 
-
-
 fun main() {
 
-        println("Lista Lógica New")
+        println("Lista Lógica")
+
+        ex01(10)
+
+
 
 
 }
 
+fun ex01(num: Int){
+        tabuada(num)
+}
 
-//      logica.Ex01 - Tabuada
-//      val tabuada = logica.Ex01()
-//      tabuada.tabuada(50)
 
 //      logica.Ex02 - Área do terreno
 //      val terreno = logica.Ex02()
