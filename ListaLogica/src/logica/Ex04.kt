@@ -1,10 +1,6 @@
 package logica
 // Divisão de dois números
 
-
-class Ex04{
-
-
     fun divisao(num1: Int, num2: Int): Double{
 
         if(num2==0){
@@ -13,9 +9,4 @@ class Ex04{
             var resultado = (num1 / num2).toDouble()
             return resultado
         }
-
-
-
     }
-
-}

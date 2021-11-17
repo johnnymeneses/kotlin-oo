@@ -5,8 +5,10 @@ fun main() {
         println("Lista Lógica")
 
 //        ex01(10)
-        ex02(5,10)
-
+//        ex02(5,10)
+//        ex03(8)
+//        ex04(10,5)
+//        ex05(50,65)
 
 
 
@@ -18,20 +20,21 @@ fun ex01(num: Int){
 
 fun ex02(lado: Int, comprimento: Int)
 {
-        areaTerreno(lado,comprimento)
+       println(areaTerreno(lado,comprimento))
 }
-//      logica.Ex02 - Área do terreno
-//      val terreno = logica.Ex02()
-//      println(terreno.areaTerreno(5,4))
 
+fun ex03(num: Int)
+{
+        println(parImpar(num))
+}
 
-//      logica.Ex03 - Par ou Impar
-//      val number = logica.Ex03()
-//      println(number.parImpar(3))
+fun ex04(a:Int, b: Int){
+        println(divisao(a,b))
+}
 
-//      logica.Ex04 - Divisão
-//      val number = logica.Ex04()
-//      println(number.divisao(10,1))
+fun ex05(paesVendidos: Int, broasVendidas: Int){
+        padaria(paesVendidos,broasVendidas)
+}
 
 //      logica.Ex05 - Padaria Paes e Broas
 //      val money = logica.Ex05()

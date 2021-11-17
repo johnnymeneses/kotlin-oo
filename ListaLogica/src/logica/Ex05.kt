@@ -5,9 +5,6 @@ e quanto deve guardar numa conta de poupança (10% do total arrecadado). Você f
 faça um algoritmo para ler as quantidades de pães e de broas, e depois calcular os dados solicitados.
 */
 
-
-class Ex05{
-
     fun padaria(paesVendidos: Int, broasVendidas: Int)
     {
         val paesTotal = paesVendidos * 0.12
@@ -20,5 +17,3 @@ class Ex05{
         println("É necessario guardar na poupança R$ "+ poupanca * 0.1)
 
     }
-
-}
