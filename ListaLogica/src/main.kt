@@ -5,8 +5,8 @@ fun main() {
         println("Lista Lógica")
 
 //        ex01(10)
-//        ex02(5,10)
-//        ex03(8)
+        println(ex02(5,10))
+//        println(ex03(8))
 //        ex04(10,5)
 //        ex05(50,65)
 
@@ -18,15 +18,7 @@ fun ex01(num: Int){
         tabuada(num)
 }
 
-fun ex02(lado: Int, comprimento: Int)
-{
-       println(areaTerreno(lado,comprimento))
-}
 
-fun ex03(num: Int)
-{
-        println(parImpar(num))
-}
 
 fun ex04(a:Int, b: Int){
         println(divisao(a,b))
