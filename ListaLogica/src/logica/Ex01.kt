@@ -8,6 +8,6 @@ Tabuada
             println("$index * $num = " + index * num)
         }
     }
-//tabuada(10)
+
 
 
