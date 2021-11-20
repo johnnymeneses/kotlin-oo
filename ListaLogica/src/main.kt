@@ -1,14 +1,17 @@
 package logica
 
+//import logica.logica.ex41
+
 fun main() {
 
         println("Lista Lógica")
 
 //        ex01(10)
-        println(ex02(5,10))
+//        println(ex02(5,10))
 //        println(ex03(8))
 //        ex04(10,5)
 //        ex05(50,65)
+//        ex41()
 
 
 
