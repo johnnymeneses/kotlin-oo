@@ -1,5 +1,7 @@
 package logica
 
+import ui.MainForm
+
 //import logica.logica.ex41
 
 fun main() {
@@ -12,6 +14,10 @@ fun main() {
 //        ex04(10,5)
 //        ex05(50,65)
 //        ex41()
+
+        MainForm()
+
+
 
 
 
