@@ -4,13 +4,10 @@ Escreva um algoritmo que leia o peso do prato montado pelo cliente (em quilos) e
 */
 
 
-class Ex08{
 
-    fun pesoPrato(peso: Double){
+    fun ex08(peso: Double){
         var valorPagar = peso * 12
 
         println("Por $peso g, você deverá pagar R$ $valorPagar")
 
     }
-
-}

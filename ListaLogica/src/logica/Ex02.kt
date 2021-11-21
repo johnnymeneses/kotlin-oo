@@ -4,7 +4,7 @@ package logica
     O cálculo da área neste caso é bem simples, basta multiplicar lado x comprimento para retângulos
 * */
 
-   fun ex02 (a: Int, b: Int): String = "A area é de ${a * b}"
+   fun ex02(a: Int, b: Int): String = "A area é de ${a * b}"
 
 
 //fun ex02(lado: Int, comprimento:Int) {

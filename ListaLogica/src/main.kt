@@ -10,12 +10,23 @@ import java.lang.Exception
 fun main() {
 
 //        println("Lista Lógica")
-        ex01(10)
+//        ex01(10)
 //        println(ex02(5,10))
 //        println(ex03(8))
-//        ex04(10,5)
+//        println(ex04(10.0,5.0))
 //        ex05(50,65)
-//        ex41()
+//        ex06("Johnny",1984)
+//        ex07(5.0,50.0)
+//        ex08(125.0)
+//        ex09(21,11)
+//        ex10(1,1,1)
+//        ex11(1,1,1)
+
+
+
+
+
+
 
         //Agenda Java Swing
 //        MainForm()
@@ -33,41 +44,12 @@ fun main() {
 
 
 
-fun ex04(a:Int, b: Int){
-        println(divisao(a,b))
-}
 
-fun ex05(paesVendidos: Int, broasVendidas: Int){
-        padaria(paesVendidos,broasVendidas)
-}
 
-//      logica.Ex05 - Padaria Paes e Broas
-//      val money = logica.Ex05()
-//      money.padaria(400,220)
 
-//Ex06
-//      val diasIdade = Ex06()
-//      diasIdade.idadeDias("Johnny",1984)
 
-////Ex07
-//    val exercicio07 = Ex07()
-//    exercicio07.calculaLitros(5.0,50.0)
 
-//Ex08
-//    val ex08 = Ex08()
-//        ex08.pesoPrato(1.465)
 
-//Ex09
-// val ex09 = Ex09()
-//    ex09.qtdeDias(31,12)
-
-//Ex10
-//var ex10 = Ex10()
-//    ex10.mediaPonderada(1,1,1)
-
-//Ex11
-//    val ex11 = Ex11()
-//    ex11.vendaCamisetas(1,1,1)
 
 //    Ex12
 //      val divisor = Ex51()

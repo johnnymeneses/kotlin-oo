@@ -3,9 +3,7 @@ Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um algori
  e exibir quantos litros ele conseguiu colocar no tanque. 
 */
 
-class Ex07{
-
-    fun calculaLitros(preco: Double, valor: Double){
+    fun ex07(preco: Double, valor: Double){
         var litros:Double = 0.0
         litros = valor / preco
 
@@ -13,5 +11,3 @@ class Ex07{
 
 
     }
-
-}

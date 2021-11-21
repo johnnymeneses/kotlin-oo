@@ -6,9 +6,7 @@ médias e grandes referentes a uma venda, e a máquina informe quanto será o va
 
 */
 
-class Ex11{
-
-        fun vendaCamisetas(p: Int, m: Int, g: Int){
+        fun ex11(p: Int, m: Int, g: Int){
             val pPreco = 10
             val mPreco = 12
             val gPreco = 15
@@ -34,6 +32,6 @@ class Ex11{
         }
 
 
-}
+
 
 
