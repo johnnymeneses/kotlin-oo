@@ -2,6 +2,8 @@ package ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class contactForm extends JFrame {
 
@@ -20,5 +22,37 @@ public class contactForm extends JFrame {
         setVisible(true);
 
 
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        setLocation(dim.width/2 - getSize().width/2,dim.height/2 - getSize().height/2);
+
+        //Fechando aplicação ao apertar o X
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+
+        setListeners();
+
+
     }
+
+    private void setListeners(){
+
+        btnSalvar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        btnCancelar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new MainForm();
+                dispose();
+            }
+        });
+
+
+    }
+
+
 }

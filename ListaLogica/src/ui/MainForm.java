@@ -2,11 +2,13 @@ package ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainForm extends JFrame{
     private JPanel rootPanel;
     private JButton buttonNewContact;
-    private JButton buttonRemove;
+    private JButton btnRemove;
     private JTable tableContacts;
 
     //Construtor
@@ -21,10 +23,27 @@ public class MainForm extends JFrame{
         //Fechando aplicação ao apertar o X
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+//        Ações
+        setListeners();
+
+    }
+
+    private void setListeners(){
+        buttonNewContact.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new contactForm();
+                dispose();
+            }
+        });
+
+        btnRemove.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 
 
-//    private void createUIComponents() {
-//        // TODO: place custom component creation code here
-//    }
 }
