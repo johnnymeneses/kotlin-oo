@@ -10,7 +10,7 @@ import java.lang.Exception
 fun main() {
 
 //        println("Lista Lógica")
-//        ex01(10)
+        ex01(10)
 //        println(ex02(5,10))
 //        println(ex03(8))
 //        ex04(10,5)
@@ -18,7 +18,7 @@ fun main() {
 //        ex41()
 
         //Agenda Java Swing
-        MainForm()
+//        MainForm()
 //        contactForm()
 
 //        save("e","e")
@@ -31,9 +31,7 @@ fun main() {
 
 
 
-fun ex01(num: Int){
-        tabuada(num)
-}
+
 
 fun ex04(a:Int, b: Int){
         println(divisao(a,b))
