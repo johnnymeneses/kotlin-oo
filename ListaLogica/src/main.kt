@@ -1,7 +1,9 @@
 package logica
 
+import logica.business.save
 import ui.MainForm
 import ui.contactForm
+import java.lang.Exception
 
 //import logica.logica.ex41
 
@@ -16,14 +18,18 @@ fun main() {
 //        ex41()
 
         //Agenda Java Swing
-        MainForm()
+//        MainForm()
 //        contactForm()
 
+//        save("e","e")
+//        delete("33","w")
 
 
 
 
 }
+
+
 
 fun ex01(num: Int){
         tabuada(num)
@@ -122,3 +128,10 @@ fun ex05(paesVendidos: Int, broasVendidas: Int){
 //        Ex30 - Desconto de 10%
 //          val ex30 = ex30()
 //        ex30.desconto(500.0)
+
+
+
+
+
+
+
