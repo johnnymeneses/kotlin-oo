@@ -1,5 +1,7 @@
 package logica.business
 
+import logica.entity.ContactEntity
+import logica.repository.ContactRepository
 import java.lang.Exception
 
 //Pacote Business lida com regra de negócio
@@ -19,6 +21,9 @@ fun validateDelete(name: String, phone: String){
 
 fun save(name: String, phone: String){
     validate(name,phone)
+
+    val contact =  ContactEntity(name,phone)
+//    ContactRepository().save(contact)
 }
 
 fun delete(name: String, phone: String){

@@ -1,6 +1,6 @@
 package logica
 
-import logica.business.save
+
 import ui.MainForm
 import ui.contactForm
 import java.lang.Exception
@@ -18,7 +18,7 @@ fun main() {
 //        ex41()
 
         //Agenda Java Swing
-//        MainForm()
+        MainForm()
 //        contactForm()
 
 //        save("e","e")
@@ -34,8 +34,6 @@ fun main() {
 fun ex01(num: Int){
         tabuada(num)
 }
-
-
 
 fun ex04(a:Int, b: Int){
         println(divisao(a,b))
