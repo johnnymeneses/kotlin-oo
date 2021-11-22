@@ -29,7 +29,7 @@ fun main() {
 
 
         //Agenda Java Swing
-//        MainForm()
+        MainForm()
 //        contactForm()
 
 //        save("e","e")
