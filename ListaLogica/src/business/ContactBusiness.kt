@@ -9,25 +9,32 @@ import java.lang.Exception
 
 class ContactBusiness {
 
-//Agenda Java Swing
-fun validate(name: String, phone: String){
-    if(name== "")  throw Exception("Nome é Obrigatório")
-    if(phone=="")  throw Exception("Telefone é Obrigatório")
-}
+    //Agenda Java Swing
+    private fun validate(name: String, phone: String){
+        if(name== "")  throw Exception("Nome é Obrigatório")
+        if(phone=="")  throw Exception("Telefone é Obrigatório")
+    }
 
-fun validateDelete(name: String, phone: String){
-    if(name== "" || phone=="")  throw Exception("É necessario selecionar um contato para remover")
-}
+    private fun validateDelete(name: String, phone: String){
+        if(name== "" || phone=="")  throw Exception("É necessario selecionar um contato para remover")
+    }
 
-fun save(name: String, phone: String){
-    validate(name,phone)
+    fun save(name: String, phone: String){
+        validate(name,phone)
 
-    val contact =  ContactEntity(name,phone)
-//    ContactRepository().save(contact)
-}
+        val contact =  ContactEntity(name,phone)
+        ContactRepository.save(contact)
+    }
 
-fun delete(name: String, phone: String){
-    validateDelete(name,phone)
-}
+    fun delete(name: String, phone: String){
+        validateDelete(name,phone)
+        val contact =  ContactEntity(name,phone)
+        ContactRepository.delete(contact)
+
+    }
+
+    fun getList(): List<ContactEntity> {
+        return ContactRepository.getList()
+    }
 
 }
