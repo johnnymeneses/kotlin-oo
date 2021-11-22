@@ -1,5 +1,7 @@
 package ui;
 
+import logica.business.ContactBusiness;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,6 +17,9 @@ public class contactForm extends JFrame {
     private JButton btnSalvar;
     private JButton btnCancelar;
 
+    private ContactBusiness mContactBusiness;
+
+
     //Construtor
     public contactForm(){
         setContentPane(rootPanel);
@@ -28,8 +33,9 @@ public class contactForm extends JFrame {
         //Fechando aplicação ao apertar o X
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-
         setListeners();
+
+        mContactBusiness = new ContactBusiness();
 
 
     }
@@ -39,6 +45,12 @@ public class contactForm extends JFrame {
         btnSalvar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String name = textName.getText();
+                String phone = textTelefone.getText();
+                mContactBusiness.save(name,phone);
+
+                new MainForm();
+                dispose();//este gormulario ira sumir
 
             }
         });
