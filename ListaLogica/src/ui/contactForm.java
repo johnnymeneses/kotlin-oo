@@ -45,12 +45,17 @@ public class contactForm extends JFrame {
         btnSalvar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String name = textName.getText();
-                String phone = textTelefone.getText();
-                mContactBusiness.save(name,phone);
 
-                new MainForm();
-                dispose();//este gormulario ira sumir
+                try{
+                    String name = textName.getText();
+                    String phone = textTelefone.getText();
+                    mContactBusiness.save(name,phone);
+
+                    new MainForm();
+                    dispose();//este formulario ira sumir
+                }catch (Exception ex){
+                    JOptionPane.showMessageDialog(null,ex.getMessage());
+                }
 
             }
         });
