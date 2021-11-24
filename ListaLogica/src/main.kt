@@ -3,6 +3,7 @@ package logica
 
 import ui.MainForm
 import ui.contactForm
+import java.io.StringReader
 import java.lang.Exception
 
 //import logica.logica.ex41
@@ -44,6 +45,20 @@ fun capitulo7() {
 }
 
 fun maiorIdade(num: Int) : Boolean = num>=18
+
+//IF Else como uma expressao
+fun calculaBonus(cargo: String, salario: Float): Float {
+
+    return if(cargo=="Coordernador"){
+        salario *2f
+    }else if(cargo== "Gerente Junior"){
+        salario * 0.5f
+    }else {
+        salario * 2
+    }
+}
+
+
 
 
 
