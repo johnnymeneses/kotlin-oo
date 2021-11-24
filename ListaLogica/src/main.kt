@@ -23,30 +23,27 @@ fun main() {
 //        ex11(1,1,1)
 
 
+    capitulo7()
 
 
-
-
-
-        //Agenda Java Swing
-        MainForm()
+    //Agenda Java Swing
+//        MainForm()
 //        contactForm()
 
 //        save("e","e")
 //        delete("33","w")
 
 
-
-
 }
 
 
+fun capitulo7() {
 
+    println(maiorIdade(19))
 
+}
 
-
-
-
+fun maiorIdade(num: Int) : Boolean = num>=18
 
 
 
