@@ -1,9 +1,11 @@
 fun secao7() {
-    println("Seção 7")
+    println("Seção 7 - Controle de FLuxo")
+    println("")
 //    operadorElvis()
 //    flowWhen()
-    flowFor()
-
+//    flowFor()
+//    flowWhile()
+    flowDoWhile()
 }
 
 
@@ -52,13 +54,70 @@ fun flowFor(){
         print("$c ")
     }
 
+    println("")
     for (i in 1..10){
         print(i)
+    }
+
+    println("")
+    for (i in 1..10 step 2){
+        print(i)
+    }
+
+    println("")
+    for(i in 0..10){
+        if(i !=8) { //Não vai imprimir o 8
+            print("$i")
+        }
+    }
+
+    println("")
+    for (i in 10 downTo 0){
+        print("$i ")
+    }
+
+}
+
+
+//While
+fun flowWhile(){
+
+    var index: Int = 0
+    while(index <10){
+        println("Menor $index")
+        index++
+
+        if(index==5) {
+            break
+        }
     }
 
 
 }
 
 
+//Do While
+fun flowDoWhile(){
+
+    var index = 10
+    do{
+        println(index)
+        index--
+    }while(index >=0)
+
+    println("")
+
+    var index2 = 10
+    do{
+        println(index2)
+        index2--
+
+        if(index2 ==3){
+            break
+        }
+    }while(index2 >=0)
+
+
+}
 
 
