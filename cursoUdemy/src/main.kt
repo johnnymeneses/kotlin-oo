@@ -1,6 +1,6 @@
 fun main() {
     println("Curso Udemy")
 
-    secao1()
+    secao7()
 
 }
