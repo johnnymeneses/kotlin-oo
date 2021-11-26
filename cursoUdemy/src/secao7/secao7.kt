@@ -1,12 +1,25 @@
 fun secao7() {
     println("Seção 7 - Controle de FLuxo")
     println("")
+
+    flowWhile1()
+
+
+
+
+
+
+
 //    operadorElvis()
 //    flowWhen()
 //    flowFor()
 //    tabuada(5)
 //    flowWhile()
 //    flowDoWhile()
+
+
+
+
 }
 
 
@@ -93,21 +106,7 @@ fun tabuada(num: Int) {
 
 
 
-//While
-fun flowWhile(){
 
-    var index: Int = 0
-    while(index <10){
-        println("Menor $index")
-        index++
-
-        if(index==5) {
-            break
-        }
-    }
-
-
-}
 
 
 //Do While
