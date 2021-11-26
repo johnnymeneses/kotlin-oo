@@ -4,8 +4,9 @@ fun secao7() {
 //    operadorElvis()
 //    flowWhen()
 //    flowFor()
+//    tabuada(5)
 //    flowWhile()
-    flowDoWhile()
+//    flowDoWhile()
 }
 
 
@@ -76,7 +77,20 @@ fun flowFor(){
         print("$i ")
     }
 
+
+
 }
+
+//For Tabuada
+fun tabuada(num: Int) {
+    for (index in 1..10) {
+        println("$index * $num = " + index * num)
+    }
+}
+
+
+
+
 
 
 //While
