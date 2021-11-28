@@ -1,7 +1,10 @@
 package secao10
 
-fun secao10() {
-    parametros()
+import aplicacoes
 
+fun secao10() {
+//    parametros()
+//    vararg()
+    aplicacoes()
 }
 
