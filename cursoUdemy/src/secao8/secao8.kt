@@ -1,7 +1,8 @@
 fun secao8(){
     println("Seção 8")
 
-    conversaoValores()
+//    conversaoValores()
+    excecoes()
 
 
 }
