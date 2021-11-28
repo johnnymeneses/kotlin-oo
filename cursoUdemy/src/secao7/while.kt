@@ -9,6 +9,7 @@ fun flowWhile1(){
 
         if(index==5) {
             break
+
         }
     }
 
