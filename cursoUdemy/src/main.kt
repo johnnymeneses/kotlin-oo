@@ -1,6 +1,8 @@
+import secao10.secao10
+
 fun main() {
     println("Curso Udemy")
 
-    secao8()
+    secao10()
 
 }

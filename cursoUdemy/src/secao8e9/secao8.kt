@@ -3,7 +3,8 @@ fun secao8(){
 
 //    conversaoValores()
 //    excecoes()
-    nullSafe()
+//    nullSafe()
+    analiseEstatica()
 
 
 }
