@@ -14,11 +14,12 @@ fun aplicacoes(){
     println(str.startsWith("l",true)) //Começa com L ignorando a letra maiscula?
 
 
-    //arrayOf é implementando em vararg com tipo em <T>
+    //arrayOf é implementando em vararg com tipo em <T> ou seja, genérico
     arrayOf(1,2,3,5,5)
 
 
+}
 
-
+fun <John> teste(vararg valor: John){
 
 }
