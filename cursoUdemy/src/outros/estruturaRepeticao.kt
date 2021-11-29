@@ -1,4 +1,6 @@
-fun controleFLuxo(){
+package outros
+
+fun estruturaRepeticao() {
 
 //FOR
     tabuada(5)
@@ -7,14 +9,8 @@ fun controleFLuxo(){
     novelos(6)
 
 
-
 //    DO WHILE
 //    WHILE SO
-
-
-
-
-
 
 }
 
@@ -35,4 +31,6 @@ fun novelos(blusa: Int){
         blusa > 1 -> println("Para $blusa blusas, é preciso ${blusa*87} novelos")
     }
 
+
 }
+

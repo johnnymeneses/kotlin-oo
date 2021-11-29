@@ -15,7 +15,7 @@ fun variaveis(){
 //    Como declarar variável imutável
     val nome2: String = "Teixeira"
 //    nome2 = "" val não pode ter valor atribuido
-        println(nome2)
+    println(nome2)
 
 
 

@@ -1,3 +1,5 @@
+package outros
+
 fun estruturaCondicional() {
 
     println("Estrutura Condicional")
