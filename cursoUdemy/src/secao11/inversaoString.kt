@@ -3,7 +3,7 @@ package secao11
 import org.junit.Assert
 import org.junit.Test
 
-class reverseStringTeste() {
+class reverseStringTeste {
 
     @Test
     fun reverseUsingSB() {
