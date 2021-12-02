@@ -19,7 +19,7 @@ class contagemLetras {
     fun contaVogaleConso() {
         val phrase = "Estou gostando muito de aprender Kotlin"
         Assert.assertEquals(15, contaVogal(phrase))
-        Assert.assertEquals(21, contaConsoante(phrase))
+        Assert.assertEquals(19, contaConsoante(phrase))
     }
 
 
@@ -37,7 +37,13 @@ fun contaVogal(str: String): Int {
 }
 
 fun contaConsoante(str: String): Int {
-    return 21
+    val consoantes="bcdfgjklmnpqrstvwxz"
+    var totalVogais=0
+
+    for( letra in str){
+        if(letra.lowercaseChar() in  consoantes) totalVogais++ //lowercaseChar pra considerar todas as vogais como inuscula
+    }
+    return totalVogais
 }
 
 
