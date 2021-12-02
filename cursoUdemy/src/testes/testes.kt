@@ -18,7 +18,20 @@ class testesUnitarios() {
         Assert.assertEquals(true, testes.retornaBoolean(true))
     }
 
+    @Test fun retornaMultiplicacao(){
+        Assert.assertEquals(20,retornaNumero(4))
+    }
+
+
+
 }
+
+fun retornaMultiplicacao(num: Int): Int{
+    return num * 5
+}
+
+
+
 
 fun retornaNumero(num: Int): Int{
     return num
