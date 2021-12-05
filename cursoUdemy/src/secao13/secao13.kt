@@ -1,11 +1,12 @@
 package secao1
 
 import classes
+import getSet
 
 fun secao13() {
 
     println("Secao 13")
-    classes()
+    getSet()
 }
 
 
