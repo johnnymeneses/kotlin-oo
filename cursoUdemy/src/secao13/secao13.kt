@@ -1,12 +1,16 @@
 package secao1
 
 import classes
+import field
 import getSet
+import kotlin.concurrent.fixedRateTimer
 
 fun secao13() {
 
     println("Secao 13")
-    getSet()
+    field()
+
+
 }
 
 
