@@ -5,6 +5,7 @@ import enum
 import field
 import getSet
 import secao13.dataClass
+import with
 import kotlin.concurrent.fixedRateTimer
 
 fun secao13() {
@@ -12,7 +13,8 @@ fun secao13() {
     println("Secao 13")
 //    field()
 //    enum()
-    dataClass()
+//    dataClass()
+    with()
 }
 
 
