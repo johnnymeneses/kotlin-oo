@@ -1,13 +1,16 @@
 class Maquina(var marca: String) {
 
-    var nucleos: Int
+    var nucleos: Int = 0
 
-        //forçando o get e set
+        //forçando o get e set com o FIELD
         get() {
-            return nucleos
+            println("Get foi chamado")
+            return field
         }
         set(value) {
-            this.nucleos = value
+//            this.nucleos = value
+            println("SET foi chamado")
+            field = value
         }
 
 
@@ -17,5 +20,6 @@ class Maquina(var marca: String) {
 fun field(){
     var m = Maquina("XPTO")
     println(m.nucleos)
-
+    m.nucleos=1
+    println(m.nucleos)
 }
