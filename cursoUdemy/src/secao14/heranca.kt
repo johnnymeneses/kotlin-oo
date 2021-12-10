@@ -32,7 +32,7 @@ fun heranca() {
         ligar()
         println("liguei")
         processar()
-        println("processei")
+        println("processei...")
         minhaMarca()
     }
 }
