@@ -13,11 +13,15 @@ open class Maaquina(val marca: String) {
     }
 }
 
-class Computador(marca: String, val nucleos: Int) : Maaquina(marca) {
+private class Computador(marca: String, val nucleos: Int) : Maaquina(marca) { //private na classe mantem os metodos dela acessivies apenas ao arquivo dentro do proprio arquivo (heranca..kt)
 
     fun ligar() {}
-
     fun processar() {}
+
+    //Modificadores de visibilidade
+    private fun ligarPrivado() {
+
+    }
 
     //Override
     override fun minhaMarca() {
@@ -27,9 +31,12 @@ class Computador(marca: String, val nucleos: Int) : Maaquina(marca) {
 
     //Overload - Quando vc tem um mesmo método com assinaturas diferentes. Tipos e/ou quantidades diferentes, parametros diferentes
 
-    fun overload (i: Int) = println("Chamei o overload Int")
-    fun overload (i: String) {println("Chamei o overload String")}
-    fun overload (i: Boolean) = println("Chamei o overload Booleano")
+    fun overload(i: Int) = println("Chamei o overload Int")
+    fun overload(i: String) {
+        println("Chamei o overload String")
+    }
+
+    fun overload(i: Boolean) = println("Chamei o overload Booleano")
 
 }
 
