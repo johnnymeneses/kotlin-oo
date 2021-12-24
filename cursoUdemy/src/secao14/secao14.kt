@@ -9,7 +9,7 @@ fun secao14(){
 
 //    heranca()
 //    variaveisEstaticas()
-    mainAbstrato()
-
+//    mainAbstrato()
+    mainInterface()
 
 }

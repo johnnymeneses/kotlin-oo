@@ -1,18 +1,13 @@
-
-
-class Maquinas(var marca: String)
-
+class Pcs(var marca: String)
 
 
 fun getSet(){
 
     //Get e Set internos
 
-    var m = Maquinas("VW")
+    var m = Pcs("VW")
         println(m.marca)
 
-
     println("Getters e Setters")
-
 
 }
