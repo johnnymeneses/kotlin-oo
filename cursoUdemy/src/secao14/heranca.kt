@@ -8,17 +8,22 @@
 
 
 open class Maaquina(val marca: String) {
-    fun minhaMarca() {
+   open fun minhaMarca() {                          //Para sobrescrever uma função (override) esta precisa estar aberta (fun)
         println("minha marca é $marca")
     }
 }
 
 class Computador(marca: String, val nucleos: Int) : Maaquina(marca) {
+
     fun ligar() {}
 
-    fun processar() {
-    }
+    fun processar() {}
 
+    //Override
+    override fun minhaMarca() {
+       println("Estou reescrevendo minha marca")
+//        super.minhaMarca() //Estou me referenciando a classe pai. Minha Marca da classe Herdada
+    }
 
 }
 
