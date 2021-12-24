@@ -8,7 +8,7 @@
 
 
 open class Maaquina(val marca: String) {
-   open fun minhaMarca() {                          //Para sobrescrever uma função (override) esta precisa estar aberta (fun)
+    open fun minhaMarca() {                          //Para sobrescrever uma função (override) esta precisa estar aberta (fun)
         println("minha marca é $marca")
     }
 }
@@ -21,15 +21,24 @@ class Computador(marca: String, val nucleos: Int) : Maaquina(marca) {
 
     //Override
     override fun minhaMarca() {
-       println("Estou reescrevendo minha marca")
+        println("Estou reescrevendo minha marca")
 //        super.minhaMarca() //Estou me referenciando a classe pai. Minha Marca da classe Herdada
     }
 
+    //Overload - Quando vc tem um mesmo método com assinaturas diferentes. Tipos e/ou quantidades diferentes, parametros diferentes
+
+    fun overload (i: Int) = println("Chamei o overload Int")
+    fun overload (i: String) {println("Chamei o overload String")}
+    fun overload (i: Boolean) = println("Chamei o overload Booleano")
+
 }
+
 
 fun heranca() {
 
     val dell = Computador("Dell", 15)
+
+
 
     with(dell) {
         ligar()
@@ -38,5 +47,12 @@ fun heranca() {
 
         println("processei...")
         minhaMarca()
+
+        overload(1)
+        overload("Oi")
     }
+
+    //Chamando os metodos da Classe Computador fora do With
+    dell.overload(true)
+
 }
