@@ -6,7 +6,8 @@ import br.com.johnny.bytebank.modelo.Cliente
 import br.com.johnny.bytebank.modelo.Conta
 import kotlin.reflect.jvm.internal.ReflectProperties
 
-class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) : Conta(titular, agencia, numeroConta)
+class contaCorrente(titular: Cliente, agencia: Int, numeroConta: Int) :
+    Conta(titular, agencia, numeroConta)
 {
 
 //    Contador especifico de contas correntes

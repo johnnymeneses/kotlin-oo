@@ -14,9 +14,7 @@ open class Maaquina(val marca: String) {
 }
 
 class Computador(marca: String, val nucleos: Int) : Maaquina(marca) {
-    fun ligar() {
-
-    }
+    fun ligar() {}
 
     fun processar() {
     }
@@ -28,7 +26,7 @@ fun heranca() {
 
     val dell = Computador("Dell", 15)
 
-    with(dell){
+    with(dell) {
         ligar()
         println("liguei")
         processar()
