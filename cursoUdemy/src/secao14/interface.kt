@@ -34,8 +34,6 @@ class Trator : Maquina{
 }
 
 
-
-
 fun mainInterface() {
     println("Interfaces")
 
