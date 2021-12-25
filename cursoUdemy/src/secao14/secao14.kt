@@ -3,6 +3,7 @@ package secao14
 import heranca
 import iniciaTardia
 import mainAbstrato
+import polimorfismo
 import variaveisEstaticas
 
 fun secao14(){
@@ -13,5 +14,6 @@ fun secao14(){
 //    mainAbstrato()
 //    mainInterface()
 //    iniciaTardia()
+    polimorfismo()
 
 }
