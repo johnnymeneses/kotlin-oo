@@ -3,6 +3,8 @@ package secao14
 // Uma interface define um contrato, quem herda deve assinar
 //interface nao consegue ter estado. nao consegue ter astribuição de variavel
 
+
+
 interface Maquina {
 
     fun ligar()
@@ -45,7 +47,5 @@ fun mainInterface() {
 
     ibec.ligar()
     ibec.desligar()
-
-
 
 }
