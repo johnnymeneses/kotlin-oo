@@ -1,5 +1,6 @@
 ///Inicializacao taria
 
+//Permite que eu declare uma variavel e nao necessariamente faça a inicialização dela... seja com valor aleatorio ou com valor vazio
 class Pessoa{
 
     //Property must be initialized or be abstract (sem o lateinit)
