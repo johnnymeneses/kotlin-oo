@@ -12,5 +12,6 @@ fun secao14(){
 //    variaveisEstaticas()
 //    mainAbstrato()
 //    mainInterface()
-    iniciaTardia()
+//    iniciaTardia()
+
 }
