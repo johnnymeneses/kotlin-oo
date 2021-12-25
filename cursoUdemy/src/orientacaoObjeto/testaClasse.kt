@@ -22,7 +22,7 @@ class Empresa (
 fun testaClasse(){
 
     val banco = Empresa("Diretor","1234568","Nome da Rua",5000.0)
-    val escritorio = Empresa ("Gerente","99887755","Nome da Avenida",8985.0)
+    val escritorio = Empresa ("secao14.Gerente","99887755","Nome da Avenida",8985.0)
 
 
     println("Classe Empresa - Objeto Banco")
