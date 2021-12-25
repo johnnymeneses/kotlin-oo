@@ -12,12 +12,9 @@ fun SalarioBigDecimal() {
 //    Quanto ele vai gastar em 6 meses
 
 
-
     regraNegocio()
 
-
 }
-
 
 
 //Criando o Array de Forma Dinâmica

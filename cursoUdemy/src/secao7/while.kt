@@ -2,6 +2,7 @@
 
 fun flowWhile1(){
 
+
     var index: Int = 0
     while(index <10){
         println("Menor $index")

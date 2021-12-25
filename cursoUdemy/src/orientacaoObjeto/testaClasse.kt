@@ -31,5 +31,4 @@ fun testaClasse(){
     println("Classe Empresa - Objeto Escritório")
     escritorio.imprimir()
 
-
 }
