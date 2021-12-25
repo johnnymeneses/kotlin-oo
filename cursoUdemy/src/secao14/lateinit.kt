@@ -1,0 +1,16 @@
+///Inicializacao taria
+
+
+
+
+
+
+
+
+
+
+
+
+fun iniciaTardia() {
+
+}

@@ -1,6 +1,7 @@
 package secao14
 
 import heranca
+import iniciaTardia
 import mainAbstrato
 import variaveisEstaticas
 
@@ -10,6 +11,6 @@ fun secao14(){
 //    heranca()
 //    variaveisEstaticas()
 //    mainAbstrato()
-    mainInterface()
-
+//    mainInterface()
+    iniciaTardia()
 }
