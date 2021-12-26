@@ -10,8 +10,3 @@ fun main() {
 
 
 fun ex02(a: Int, b: Int): String = "A area é de ${a * b}"
-
-
-//fun ex02(lado: Int, comprimento:Int) {
-//   println("A área é ${lado * comprimento}")
-//}
