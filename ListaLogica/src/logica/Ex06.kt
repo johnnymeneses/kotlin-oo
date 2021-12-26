@@ -4,8 +4,10 @@ Considere sempre anos completos, e que um ano possui 365 dias.
 Ex: uma pessoa com 19 anos possui 6935 dias de vida; veja um exemplo de saída: MARIA, VOCÊ JÁ VIVEU 6935 DIAS
 */
 
+fun main() {
+    ex06("Johnny", 37)
+}
 
-        fun ex06(nome: String, idade: Int)
-        {
-                println("$nome, você já viveu "+ idade* 365 + " dias")
-        }
+fun ex06(nome: String, idade: Int) {
+    println("$nome, você já viveu " + idade * 365 + " dias")
+}
