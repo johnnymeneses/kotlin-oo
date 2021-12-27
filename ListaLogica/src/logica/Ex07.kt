@@ -3,9 +3,8 @@ Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um algori
  e exibir quantos litros ele conseguiu colocar no tanque. 
 */
 
-fun main() {
-    ex07(5.5f, 80.0f)
-}
+fun main() = ex07(5.5f, 80.0f)
+
 
 fun ex07(preco: Float, dinheiro: Float) {
     var litros = dinheiro / preco

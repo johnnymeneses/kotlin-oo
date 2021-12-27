@@ -11,22 +11,6 @@ import java.lang.Exception
 fun main() {
 
 
-//        println("Lista Lógica")
-//        ex01(10)
-//        println(ex02(5,10))
-//        println(ex03(8))
-//        println(ex04(10.0,5.0))
-//        ex05(50,65)
-//        ex06("Johnny",1984)
-//        ex07(5.0,50.0)
-//        ex08(125.0)
-//        ex09(21,11)
-//        ex10(1,1,1)
-//        ex11(1,1,1)
-
-
-//    capitulo7()
-
 
     //Agenda Java Swing
 //        MainForm()

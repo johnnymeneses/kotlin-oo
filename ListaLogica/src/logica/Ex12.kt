@@ -4,7 +4,7 @@ Em uma segunda versão, avisar se a logica.soma dos divisores e a mesma do núme
 Terceira versão: dado um range, exibir quais números tem a logica.soma de seus divisores exatamente igual a mumero informado
 * */
 
-class Ex12{
+fun main() = numerosAmigos(28,28)
 
     fun numerosAmigos(num1: Int, num2: Int) {
         var soma1: Int = 0
@@ -37,7 +37,7 @@ class Ex12{
 //            if (num1 % index == 0) soma1 += index
 //        }
 //        println("Soma dos divisores de $num1 : " + (soma1 - num1))
-}
+
 
 
 fun restoDivisao(num: Int){

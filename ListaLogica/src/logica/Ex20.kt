@@ -4,7 +4,7 @@ Faça um algoritmo para calcular e imprimir o salário bruto e o salário líqui
 Considere que o salário líquido é igual ao salário bruto descontando-se 10% de impostos.
  */
 
-class Ex20{
+fun ex20(){
         val horaNormal = 10
         val horaExtra = 15
         val salarioBruto = 0.0
