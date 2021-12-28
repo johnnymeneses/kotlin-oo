@@ -57,6 +57,7 @@ fun main() {
 
     // Qual a soma de calorias?
     val sumCalories = data.sumBy { it.calorias }
+
     println("A soma de calorias é: $sumCalories")
 
     // Me dê as duas primeiras receitas
