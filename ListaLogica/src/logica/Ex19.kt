@@ -3,3 +3,6 @@ Alguns países medem temperaturas em graus Celsius, e outros em graus Fahrenheit
 
  */
 
+class Ex19{
+
+}

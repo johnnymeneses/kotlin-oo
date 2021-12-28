@@ -4,20 +4,19 @@ Faça um algoritmo para calcular e imprimir o salário bruto e o salário líqui
 Considere que o salário líquido é igual ao salário bruto descontando-se 10% de impostos.
  */
 
-fun ex20(){
-        val horaNormal = 10
-        val horaExtra = 15
-        val salarioBruto = 0.0
-        val salarioLiquido =  0.0
-
-        fun calculoHoras(hn: Int, he: Int)
-        {
+fun main() = ex20(10,0)
 
 
-                if(he<=0)
-                        return
+fun ex20(horaNormal: Int, horaExtra: Int){
 
-        }
+        val valorHoraNormal = 10
+        val valorHoraExtra = 10
+
+        val salarioBruto = (horaNormal*valorHoraNormal)+(horaExtra*valorHoraExtra)
+        val imposto = 0.1
+        val salarioLiquido = salarioBruto - (salarioBruto*imposto)
+
+        println("Horas Trabalhadas: $horaNormal | Horas Extras: $horaExtra | Valor à receber  R$ $salarioLiquido ja descontando ${salarioBruto-salarioLiquido} de imposto")
 
 }
 
