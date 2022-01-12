@@ -9,7 +9,7 @@ class car (val model: String, val maxSpeed: Int){
         if(value>maxSpeed){
             throw Exception("Velocidade maior que a permitida")
         }else{
-            field = value
+            field = value //Pesquisar mais sobre o conceito de Field
         }
     }
     get(){
