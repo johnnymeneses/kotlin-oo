@@ -3,18 +3,38 @@ package logica.logica
 //Orientação a objeto
 //Criar um Funcionario > Gerente Herdando de Funcionario > Gerente Abstraindo de Fucnionario > Analista> Calcula Bonificação
 
-class Funcionario(val nome:String, val salario: Double){
+abstract class Funcionario(val nome: String, var salario: Double) {
+
+    open fun salarioBonus(nome: Funcionario) {
+        salario += 200
+    }
+}
+
+
+class Gerente(nome: String, salario: Double) : Funcionario(nome, salario) {
+
+    override fun salarioBonus(nome: Funcionario) {
+        salario+=800
+    }
+}
+
+class Analista(var nomeA: String, var salarioA: Double) : Funcionario(nomeA, salarioA) {
 
 }
 
 
-
-
 fun main() {
 
-    val johnny = Funcionario("Johnny",500.0)
+    val johnny = Analista("Johnny", 500.0)
+    val eder = Gerente("Eder",800.0)
 
-    println("Nome ${johnny.nome}, Salario ${johnny.salario}")
+    println(johnny.salario)
+    johnny.salarioBonus(johnny)
+    println(johnny.salario)
+
+    println(eder.salario)
+    eder.salarioBonus(eder)
+    println(eder.salario)
 
 
 }
