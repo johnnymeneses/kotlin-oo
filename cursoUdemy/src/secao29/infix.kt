@@ -16,4 +16,4 @@ fun main(){
     println(john isName "Johnny") //infix
 
 }
-q
+
